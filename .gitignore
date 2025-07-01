@@ -1,0 +1,12 @@
+#*.xml
+#*.log
+$*.apk
+*.AXF
+*.CRF
+*.D
+*.DEP
+*.IEX
+*.LNP
+*.htm
+*.O
+*.sct
