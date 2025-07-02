@@ -2753,71 +2753,71 @@ VOID system_init(VOID)
 
 VOID key_service(VOID)
 {
-    UINT8 u8key = mculib_key_detect();
-    LOG("test TEST.");
-    switch ( u8key )
-    {
-        case KEY_MAP_SHORT0:
-            //g_u8_user_data & 0x01
-            g_sel++;
-            if (g_sel >= HDMI_PORTS)
-            {
-                g_sel = 0;
-            }
-            if (g_u8_user_data & 0x01)
-            {
-                g_u8_user_data = (g_sel << 4) | (g_u8_user_data & 0x0f);
-                mculib_user_save();
-            }
-            LOG("case short key0.");
-            break;
-        case KEY_MAP_SHORT1:
-          LOG("short key1.");
-            if (g_u8_user_data & 0x01)
-            {
-                g_u8_user_data = g_u8_user_data & 0xfe; // set to auto mode
-                 LOG("auto mode");
-            }
-            else
-            {
-                g_u8_user_data = g_u8_user_data | 0x01; // manual mode
-                LOG("manual mode");
-            }
-            if (g_u8_user_data & 0x01)
-            {
-                MS9601A_Write(0x64, 0x07);
-            }
-            else
-            {
-                MS9601A_Write(0x64, 0x17); // 会自动切
-            }
-            mculib_user_save();
-            break;
-        case KEY_MAP_SHORT2:
-            g_Output1Disable = !g_Output1Disable;
-            if (g_Output1Disable)
-            {
-                _shutdown_output(3);
-            }
-            else if (g_b_hdmi_input_valid)
-            {
-                _config_output(3);
-            }
-//     if (g_u8_user_data &0x02)
-//      {
-//          g_u8_user_data = g_u8_user_data&0xfd; // set to auto mode
-//      }
-//      else
-//      {
-//          g_u8_user_data = g_u8_user_data|0x01; // manual mode
-//      }
-            LOG("short key2.");
-            break;
+//    UINT8 u8key = mculib_key_detect();
+//    LOG("test TEST.");
+//    switch ( u8key )
+//    {
+//        case KEY_MAP_SHORT0:
+//            //g_u8_user_data & 0x01
+//            g_sel++;
+//            if (g_sel >= HDMI_PORTS)
+//            {
+//                g_sel = 0;
+//            }
+//            if (g_u8_user_data & 0x01)
+//            {
+//                g_u8_user_data = (g_sel << 4) | (g_u8_user_data & 0x0f);
+//                mculib_user_save();
+//            }
+//            LOG("case short key0.");
+//            break;
+//        case KEY_MAP_SHORT1:
+//          LOG("short key1.");
+//            if (g_u8_user_data & 0x01)
+//            {
+//                g_u8_user_data = g_u8_user_data & 0xfe; // set to auto mode
+//                 LOG("auto mode");
+//            }
+//            else
+//            {
+//                g_u8_user_data = g_u8_user_data | 0x01; // manual mode
+//                LOG("manual mode");
+//            }
+//            if (g_u8_user_data & 0x01)
+//            {
+//                MS9601A_Write(0x64, 0x07);
+//            }
+//            else
+//            {
+//                MS9601A_Write(0x64, 0x17); // 会自动切
+//            }
+//            mculib_user_save();
+//            break;
+//        case KEY_MAP_SHORT2:
+//            g_Output1Disable = !g_Output1Disable;
+//            if (g_Output1Disable)
+//            {
+//                _shutdown_output(3);
+//            }
+//            else if (g_b_hdmi_input_valid)
+//            {
+//                _config_output(3);
+//            }
+////     if (g_u8_user_data &0x02)
+////      {
+////          g_u8_user_data = g_u8_user_data&0xfd; // set to auto mode
+////      }
+////      else
+////      {
+////          g_u8_user_data = g_u8_user_data|0x01; // manual mode
+////      }
+//            LOG("short key2.");
+//            break;
 
-        case KEY_MAP_LONG4:
-            LOG("long key.");
-            break;
-    }
+//        case KEY_MAP_LONG4:
+//            LOG("long key.");
+//            break;
+//    }
 }
 
 extern uint8_t g_sel_last,g_sel;

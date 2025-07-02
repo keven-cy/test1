@@ -221,7 +221,7 @@ void HDMI_InPut_Switch(void)
 		//mculib_delay_ms(1);
 		MS9601A_Write(0x0f, 0x03);
 
-		mculib_delay_ms(120);
+//		mculib_delay_ms(120);
 
 			MS9601A_Write(0x0f, val);
 		//mculib_delay_ms(1);
