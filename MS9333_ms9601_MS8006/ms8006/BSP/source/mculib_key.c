@@ -72,7 +72,7 @@ UINT8 mculib_key_detect(VOID)
             u8keyPressed = KEY_MAP_SHORT1;
             break;
         case KEY_SWITCH2:
-            u8keyPressed = KEY_MAP_SHORT2;
+//            u8keyPressed = KEY_MAP_SHORT2;
             break;
         default:
             break;
