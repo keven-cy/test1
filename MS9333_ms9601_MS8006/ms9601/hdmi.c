@@ -199,13 +199,13 @@ void ms9601_init(void)
 	}
 
 	MS9601A_Write(0x20, 0x03);
-	hdmi_ldo_off();
+//	hdmi_ldo_off();
 }
 
 // ÇÐ»»¶Ë¿Ú
 void HDMI_InPut_Switch(void)
 {
-    UINT8 i, val;
+    UINT8 i, val,test;
 
 	if (g_sel_last != g_sel)
 	{

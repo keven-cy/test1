@@ -40,12 +40,12 @@ static BOOL   g_bAntiShakeFlag = TRUE;
 #if 1
 VOID mculib_key_init(VOID)
 {
-    // config GPIO mode if need
-    GPIO_InitTypeDef GPIO_InitStruct = {0};
-    GPIO_InitStruct.Pin = KEY_INPUT_PINS;
-    GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-	GPIO_InitStruct.Pull = GPIO_PULLUP;
-    muclib_gpio_init(KEY_IO_PORT, &GPIO_InitStruct);
+//    // config GPIO mode if need
+//    GPIO_InitTypeDef GPIO_InitStruct = {0};
+//    GPIO_InitStruct.Pin = KEY_INPUT_PINS;
+//    GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+//	GPIO_InitStruct.Pull = GPIO_PULLUP;
+//    muclib_gpio_init(KEY_IO_PORT, &GPIO_InitStruct);
 }
 
 UINT8 mculib_key_detect(VOID)
