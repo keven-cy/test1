@@ -43,14 +43,14 @@ static BOOL g_e_is_debug = FALSE;
 
 UART_HandleTypeDef sUartxHandle = {0};
 /* Exported constants ---------------------------------------------------------*/
-#define UARTx                                           UART1
-#define UARTx_TX_PORT                                   GPIOD
-#define UARTx_TX_PIN                                    GPIO_PIN_5
-#define UARTx_RX_PORT                                   GPIOD
-#define UARTx_RX_PIN                                    GPIO_PIN_6
-#define UARTx_TX_ALTERNATE_AFn                          GPIO_AF5_UART1_TXD
-#define UARTx_RX_ALTERNATE_AFn                          GPIO_AF5_UART1_RXD
-#define UARTx_IRQn                                      UART1_IRQn
+//#define UARTx                                           UART1
+//#define UARTx_TX_PORT                                   GPIOD
+//#define UARTx_TX_PIN                                    GPIO_PIN_5
+//#define UARTx_RX_PORT                                   GPIOD
+//#define UARTx_RX_PIN                                    GPIO_PIN_6
+//#define UARTx_TX_ALTERNATE_AFn                          GPIO_AF5_UART1_TXD
+//#define UARTx_RX_ALTERNATE_AFn                          GPIO_AF5_UART1_RXD
+//#define UARTx_IRQn                                      UART1_IRQn
 
 /* Exported macros-------------------------------------------------------------*/
 #define __HAL_RCC_UARTx_CLK_ENABLE()  			       __HAL_RCC_UART1_CLK_ENABLE()	
