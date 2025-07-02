@@ -2011,12 +2011,13 @@ _JUMP_EDID_DEFALUT:
 
 VOID sys_hotplug_service(void)
 {
+    UINT8 i=0;
     g_u8_hdmi_tx_hpd_detect_count++;
     if (g_u8_hdmi_tx_hpd_detect_count < HDMI_TX_HPD_DET_TIMEOUT)
     {
         return;
     }
-    g_u8_hdmi_tx_hpd_detect_count = 0;
+//    g_u8_hdmi_tx_hpd_detect_count = 0;
 
     _hotplug_service();
 
@@ -2863,22 +2864,22 @@ VOID main(VOID)
             }
         }
 
-        // Power reduction.
-        mculib_delay_ms(1);
-        if (g_u8_user_data & 0x01)
-        {
-            if (g_LedTimer > 100) // 1s
-            {
-                mculib_Led_toggle(); // manual mode
-                g_LedTimer = 0;
-            }
-            
-        }
-        else if (g_LedTimer > 50) // 0.5s
-            {
-                mculib_Led_toggle(); //  auto mode
-                g_LedTimer = 0;
-            }
+//        // Power reduction.
+//        mculib_delay_ms(1);
+//        if (g_u8_user_data & 0x01)
+//        {
+//            if (g_LedTimer > 100) // 1s
+//            {
+//                mculib_Led_toggle(); // manual mode
+//                g_LedTimer = 0;
+//            }
+//            
+//        }
+//        else if (g_LedTimer > 50) // 0.5s
+//            {
+//                mculib_Led_toggle(); //  auto mode
+//                g_LedTimer = 0;
+//            }
         
     }
 }

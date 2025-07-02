@@ -183,23 +183,21 @@ void hdmi_pow_logic(void)
 
 void ms9601_init(void)
 {
-    UINT8 chip_id = 0;
-	g_sel_last = HDMI_PORTS - 1;
+//    UINT8 chip_id = 0;
+//	g_sel_last = HDMI_PORTS - 1;
 
-	mculib_chip_reset();
-	LOG("MS9601A_hdmi3_demo_E_20220617");
-	chip_id = MS9601A_Read(0x01);
-	if (chip_id == 0X60)
-	{
-		LOG("MS9601A chip valid");
-	}
-	else
-	{
-		LOG("MS9601A chip not valid");
-	}
+//	mculib_chip_reset();
+//	LOG("MS9601A_hdmi3_demo_E_20220617");
+//	chip_id = MS9601A_Read(0x01);
+//	if (chip_id == 0X60)
+//	{
+//		LOG("MS9601A chip valid");
+//	}
+//	else
+//	{
+//		LOG("MS9601A chip not valid");
+//	}
 
-	MS9601A_Write(0x20, 0x03);
-//	hdmi_ldo_off();
 }
 
 // ÇÐ»»¶Ë¿Ú
