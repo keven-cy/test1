@@ -283,19 +283,13 @@ Section Cross References
     main.o(i._tx_edid_read_again) refers to main.o(.bss) for g_st_hdmi_edid_flag
     main.o(i._tx_edid_read_again) refers to main.o(.constdata) for u8_sys_edid_default_buf
     main.o(i.key_service) refers to mculib_key.o(i.mculib_key_detect) for mculib_key_detect
-<<<<<<< HEAD
     main.o(i.key_service) refers to mculib_uart.o(i.mculib_uart_log) for mculib_uart_log
-    main.o(i.key_service) refers to main.o(i._shutdown_output) for _shutdown_output
-    main.o(i.key_service) refers to main.o(i._config_output) for _config_output
-=======
     main.o(i.key_service) refers to mculib_user_setting.o(i.mculib_user_save) for mculib_user_save
-    main.o(i.key_service) refers to mculib_uart.o(i.mculib_uart_log) for mculib_uart_log
     main.o(i.key_service) refers to hdmi.o(i.MS9601A_Write) for MS9601A_Write
     main.o(i.key_service) refers to main.o(i._shutdown_output) for _shutdown_output
     main.o(i.key_service) refers to main.o(i._config_output) for _config_output
     main.o(i.key_service) refers to hdmi.o(.data) for g_sel
     main.o(i.key_service) refers to mculib_user_setting.o(.data) for g_u8_user_data
->>>>>>> remotes/origin/master
     main.o(i.key_service) refers to main.o(.data) for g_Output1Disable
     main.o(i.main) refers to main.o(i.system_init) for system_init
     main.o(i.main) refers to mculib_uart.o(i.mculib_uart_log) for mculib_uart_log
@@ -1150,189 +1144,96 @@ Image Symbol Table
     i.i2c_read_8bidx8bval                    0x00007430   Section        0  mculib_i2c.o(i.i2c_read_8bidx8bval)
     i.i2c_write_8bidx8bval                   0x0000747a   Section        0  mculib_i2c.o(i.i2c_write_8bidx8bval)
     i.key_service                            0x000074b8   Section        0  main.o(i.key_service)
-<<<<<<< HEAD
-    i.main                                   0x00007558   Section        0  main.o(i.main)
-    i.mculib_Led_toggle                      0x0000762c   Section        0  mculib_peripheral.o(i.mculib_Led_toggle)
-    i.mculib_chip_read_interrupt_pin         0x0000763c   Section        0  mculib_peripheral.o(i.mculib_chip_read_interrupt_pin)
-    i.mculib_chip_reset                      0x00007674   Section        0  mculib_peripheral.o(i.mculib_chip_reset)
-    i.mculib_clock_init                      0x000076b4   Section        0  mculib_gpio.o(i.mculib_clock_init)
-    i.mculib_delay_ms                        0x000077f4   Section        0  mculib_timer.o(i.mculib_delay_ms)
-    i.mculib_delay_us                        0x0000781c   Section        0  mculib_timer.o(i.mculib_delay_us)
-    i.mculib_hdmi_rx_led_control             0x0000784e   Section        0  mculib_peripheral.o(i.mculib_hdmi_rx_led_control)
-    i.mculib_hdmi_tx_led_control             0x00007850   Section        0  mculib_peripheral.o(i.mculib_hdmi_tx_led_control)
-    i.mculib_i2c_burstread_16bidx8bval       0x0000786e   Section        0  mculib_i2c.o(i.mculib_i2c_burstread_16bidx8bval)
-    i.mculib_i2c_burstread_8bidx8bval        0x000078e0   Section        0  mculib_i2c.o(i.mculib_i2c_burstread_8bidx8bval)
-    i.mculib_i2c_burstread_8bidx8bval_ext    0x00007944   Section        0  mculib_i2c.o(i.mculib_i2c_burstread_8bidx8bval_ext)
-    i.mculib_i2c_burstwrite_16bidx8bval      0x000079a0   Section        0  mculib_i2c.o(i.mculib_i2c_burstwrite_16bidx8bval)
-    i.mculib_i2c_init                        0x00007a04   Section        0  mculib_i2c.o(i.mculib_i2c_init)
-    i.mculib_i2c_read_16bidx8bval            0x00007a30   Section        0  mculib_i2c.o(i.mculib_i2c_read_16bidx8bval)
-    i.mculib_i2c_read_8bidx8bval             0x00007a86   Section        0  mculib_i2c.o(i.mculib_i2c_read_8bidx8bval)
-    i.mculib_i2c_set_speed                   0x00007ad0   Section        0  mculib_i2c.o(i.mculib_i2c_set_speed)
-    i.mculib_i2c_write_16bidx8bval           0x00007b0c   Section        0  mculib_i2c.o(i.mculib_i2c_write_16bidx8bval)
-    i.mculib_i2c_write_8bidx8bval            0x00007b56   Section        0  mculib_i2c.o(i.mculib_i2c_write_8bidx8bval)
-    i.mculib_i2c_write_blank                 0x00007b94   Section        0  mculib_i2c.o(i.mculib_i2c_write_blank)
-    i.mculib_iap_erase                       0x00007bc0   Section        0  mculib_iap.o(i.mculib_iap_erase)
-    i.mculib_iap_read_byte                   0x00007bec   Section        0  mculib_iap.o(i.mculib_iap_read_byte)
-    i.mculib_iap_write                       0x00007bf2   Section        0  mculib_iap.o(i.mculib_iap_write)
-    i.mculib_iap_write_byte                  0x00007c10   Section        0  mculib_iap.o(i.mculib_iap_write_byte)
-    i.mculib_key_detect                      0x00007c24   Section        0  mculib_key.o(i.mculib_key_detect)
-    i.mculib_key_init                        0x00007d10   Section        0  mculib_key.o(i.mculib_key_init)
-    i.mculib_led_init                        0x00007d38   Section        0  mculib_peripheral.o(i.mculib_led_init)
-    i.mculib_timer_config_ms                 0x00007d6c   Section        0  mculib_timer.o(i.mculib_timer_config_ms)
-    i.mculib_uart_init                       0x00007e08   Section        0  mculib_uart.o(i.mculib_uart_init)
-    i.mculib_uart_log                        0x00007ed8   Section        0  mculib_uart.o(i.mculib_uart_log)
-    i.mculib_uart_log1                       0x00007ef0   Section        0  mculib_uart.o(i.mculib_uart_log1)
-    i.mculib_uart_log2                       0x00007f18   Section        0  mculib_uart.o(i.mculib_uart_log2)
-    i.mculib_uart_print_char                 0x00007f38   Section        0  mculib_uart.o(i.mculib_uart_print_char)
-    i.mculib_uart_print_dec                  0x00007f64   Section        0  mculib_uart.o(i.mculib_uart_print_dec)
-    i.mculib_uart_print_hex                  0x00007fc2   Section        0  mculib_uart.o(i.mculib_uart_print_hex)
-    i.mculib_uart_print_string               0x00007ff0   Section        0  mculib_uart.o(i.mculib_uart_print_string)
-    i.mculib_user_load                       0x00008008   Section        0  mculib_user_setting.o(i.mculib_user_load)
-    i.mculib_user_save                       0x000080d0   Section        0  mculib_user_setting.o(i.mculib_user_save)
-    i.ms933x_init                            0x000080f8   Section        0  main.o(i.ms933x_init)
-    i.ms933x_interrupt_service               0x00008198   Section        0  main.o(i.ms933x_interrupt_service)
-    i.ms933x_media_service                   0x000081c0   Section        0  main.o(i.ms933x_media_service)
-    i.ms9601_Media_Service                   0x00008204   Section        0  hdmi.o(i.ms9601_Media_Service)
-    i.ms9601_init                            0x0000822c   Section        0  hdmi.o(i.ms9601_init)
-    i.muclib_gpio_init                       0x000082b8   Section        0  mculib_gpio.o(i.muclib_gpio_init)
-    i.printf_input_audio_config              0x00008324   Section        0  main.o(i.printf_input_audio_config)
-    i.printf_input_av_config                 0x000083e8   Section        0  main.o(i.printf_input_av_config)
-    i.printf_input_timing                    0x00008454   Section        0  main.o(i.printf_input_timing)
-    i.printf_input_vendor_specific_config    0x00008648   Section        0  main.o(i.printf_input_vendor_specific_config)
-    i.printf_input_video_config              0x000086d8   Section        0  main.o(i.printf_input_video_config)
-    i.sys_abs                                0x00008800   Section        0  hdmi.o(i.sys_abs)
-    i.sys_audio_i2s_mclk_pad_ctrl_service    0x00008810   Section        0  main.o(i.sys_audio_i2s_mclk_pad_ctrl_service)
-    i.sys_config_output                      0x0000886c   Section        0  main.o(i.sys_config_output)
-    i.sys_default_hdmi_audio_config          0x000088c0   Section        0  main.o(i.sys_default_hdmi_audio_config)
-    i.sys_default_hdmi_vendor_specific_config 0x000088dc   Section        0  main.o(i.sys_default_hdmi_vendor_specific_config)
-    i.sys_default_hdmi_video_config          0x000088f0   Section        0  main.o(i.sys_default_hdmi_video_config)
-    i.sys_edid_convert                       0x00008910   Section        0  main.o(i.sys_edid_convert)
-    i.sys_error_service                      0x00008c9c   Section        0  main.o(i.sys_error_service)
-    i.sys_error_service_enable               0x00008e1c   Section        0  main.o(i.sys_error_service_enable)
-    i.sys_hdmi_av_config                     0x00008e58   Section        0  main.o(i.sys_hdmi_av_config)
-    i.sys_hdmi_gcp_packet_avmute_service     0x00008f34   Section        0  main.o(i.sys_hdmi_gcp_packet_avmute_service)
-    i.sys_hdmi_rx_audio_config               0x00008f70   Section        0  main.o(i.sys_hdmi_rx_audio_config)
-    i.sys_hdmi_rx_audio_service              0x00009014   Section        0  main.o(i.sys_hdmi_rx_audio_service)
-    i.sys_hdmi_rx_hdcp_service               0x00009084   Section        0  main.o(i.sys_hdmi_rx_hdcp_service)
-    i.sys_hdmi_rx_packet_service             0x0000911c   Section        0  main.o(i.sys_hdmi_rx_packet_service)
-    i.sys_hdmi_rx_pll_service                0x000091c4   Section        0  main.o(i.sys_hdmi_rx_pll_service)
-    i.sys_hdmi_rx_tmds_overload_service      0x000092b4   Section        0  main.o(i.sys_hdmi_rx_tmds_overload_service)
-    i.sys_hdmi_rx_video_fifo_reset           0x000092b6   Section        0  main.o(i.sys_hdmi_rx_video_fifo_reset)
-    i.sys_hdmi_tx_hdcp_service               0x000092cc   Section        0  main.o(i.sys_hdmi_tx_hdcp_service)
-    i.sys_hotplug_init                       0x00009358   Section        0  main.o(i.sys_hotplug_init)
-    i.sys_hotplug_service                    0x000093d0   Section        0  main.o(i.sys_hotplug_service)
-    i.sys_led_init                           0x00009450   Section        0  main.o(i.sys_led_init)
-    i.sys_led_process                        0x0000947c   Section        0  main.o(i.sys_led_process)
-    i.sys_mdt_service                        0x00009518   Section        0  main.o(i.sys_mdt_service)
-    i.sys_ms933x_chip_valid_check            0x00009690   Section        0  main.o(i.sys_ms933x_chip_valid_check)
-    i.sys_shutdown_output                    0x000096ec   Section        0  main.o(i.sys_shutdown_output)
-    i.system_init                            0x0000971c   Section        0  main.o(i.system_init)
-    .constdata                               0x00009758   Section      256  hw32l003_hal_uart.o(.constdata)
-    ParityTable256                           0x00009758   Data         256  hw32l003_hal_uart.o(.constdata)
-    .constdata                               0x00009858   Section      844  main.o(.constdata)
-    u8_sys_edid_default_buf                  0x00009858   Data         256  main.o(.constdata)
-    u8_rx_ksv_buf                            0x00009958   Data           5  main.o(.constdata)
-    u8_rx_ksv_clr_buf                        0x0000995d   Data           5  main.o(.constdata)
-    u8_rx_key_buf                            0x00009962   Data         280  main.o(.constdata)
-    u8_tx_ksv_buf                            0x00009a7a   Data           5  main.o(.constdata)
-    u8_tx_key_buf                            0x00009a7f   Data         280  main.o(.constdata)
-    .constdata                               0x00009ba4   Section       38  hdmi.o(.constdata)
-    .constdata                               0x00009bca   Section        8  ms933x_drv_hdmi_tx.o(.constdata)
-    HDCP_AN_DATA                             0x00009bca   Data           8  ms933x_drv_hdmi_tx.o(.constdata)
-    .constdata                               0x00009bd4   Section      150  ms933x_drv_hdmi_rx.o(.constdata)
-    ptEqGainVal                              0x00009bd4   Data         112  ms933x_drv_hdmi_rx.o(.constdata)
-=======
-    i.main                                   0x00007614   Section        0  main.o(i.main)
-    i.mculib_Led_toggle                      0x000076e8   Section        0  mculib_peripheral.o(i.mculib_Led_toggle)
-    i.mculib_chip_read_interrupt_pin         0x000076f8   Section        0  mculib_peripheral.o(i.mculib_chip_read_interrupt_pin)
-    i.mculib_chip_reset                      0x00007730   Section        0  mculib_peripheral.o(i.mculib_chip_reset)
-    i.mculib_clock_init                      0x00007770   Section        0  mculib_gpio.o(i.mculib_clock_init)
-    i.mculib_delay_ms                        0x000078b0   Section        0  mculib_timer.o(i.mculib_delay_ms)
-    i.mculib_delay_us                        0x000078d8   Section        0  mculib_timer.o(i.mculib_delay_us)
-    i.mculib_hdmi_rx_led_control             0x0000790a   Section        0  mculib_peripheral.o(i.mculib_hdmi_rx_led_control)
-    i.mculib_hdmi_tx_led_control             0x0000790c   Section        0  mculib_peripheral.o(i.mculib_hdmi_tx_led_control)
-    i.mculib_i2c_burstread_16bidx8bval       0x0000792a   Section        0  mculib_i2c.o(i.mculib_i2c_burstread_16bidx8bval)
-    i.mculib_i2c_burstread_8bidx8bval        0x0000799c   Section        0  mculib_i2c.o(i.mculib_i2c_burstread_8bidx8bval)
-    i.mculib_i2c_burstread_8bidx8bval_ext    0x00007a00   Section        0  mculib_i2c.o(i.mculib_i2c_burstread_8bidx8bval_ext)
-    i.mculib_i2c_burstwrite_16bidx8bval      0x00007a5c   Section        0  mculib_i2c.o(i.mculib_i2c_burstwrite_16bidx8bval)
-    i.mculib_i2c_init                        0x00007ac0   Section        0  mculib_i2c.o(i.mculib_i2c_init)
-    i.mculib_i2c_read_16bidx8bval            0x00007aec   Section        0  mculib_i2c.o(i.mculib_i2c_read_16bidx8bval)
-    i.mculib_i2c_read_8bidx8bval             0x00007b42   Section        0  mculib_i2c.o(i.mculib_i2c_read_8bidx8bval)
-    i.mculib_i2c_set_speed                   0x00007b8c   Section        0  mculib_i2c.o(i.mculib_i2c_set_speed)
-    i.mculib_i2c_write_16bidx8bval           0x00007bc8   Section        0  mculib_i2c.o(i.mculib_i2c_write_16bidx8bval)
-    i.mculib_i2c_write_8bidx8bval            0x00007c12   Section        0  mculib_i2c.o(i.mculib_i2c_write_8bidx8bval)
-    i.mculib_i2c_write_blank                 0x00007c50   Section        0  mculib_i2c.o(i.mculib_i2c_write_blank)
-    i.mculib_iap_erase                       0x00007c7c   Section        0  mculib_iap.o(i.mculib_iap_erase)
-    i.mculib_iap_read_byte                   0x00007ca8   Section        0  mculib_iap.o(i.mculib_iap_read_byte)
-    i.mculib_iap_write                       0x00007cae   Section        0  mculib_iap.o(i.mculib_iap_write)
-    i.mculib_iap_write_byte                  0x00007ccc   Section        0  mculib_iap.o(i.mculib_iap_write_byte)
-    i.mculib_key_detect                      0x00007ce0   Section        0  mculib_key.o(i.mculib_key_detect)
-    i.mculib_key_init                        0x00007dcc   Section        0  mculib_key.o(i.mculib_key_init)
-    i.mculib_led_init                        0x00007df4   Section        0  mculib_peripheral.o(i.mculib_led_init)
-    i.mculib_timer_config_ms                 0x00007e28   Section        0  mculib_timer.o(i.mculib_timer_config_ms)
-    i.mculib_uart_init                       0x00007ec4   Section        0  mculib_uart.o(i.mculib_uart_init)
-    i.mculib_uart_log                        0x00007f94   Section        0  mculib_uart.o(i.mculib_uart_log)
-    i.mculib_uart_log1                       0x00007fac   Section        0  mculib_uart.o(i.mculib_uart_log1)
-    i.mculib_uart_log2                       0x00007fd4   Section        0  mculib_uart.o(i.mculib_uart_log2)
-    i.mculib_uart_print_char                 0x00007ff4   Section        0  mculib_uart.o(i.mculib_uart_print_char)
-    i.mculib_uart_print_dec                  0x00008020   Section        0  mculib_uart.o(i.mculib_uart_print_dec)
-    i.mculib_uart_print_hex                  0x0000807e   Section        0  mculib_uart.o(i.mculib_uart_print_hex)
-    i.mculib_uart_print_string               0x000080ac   Section        0  mculib_uart.o(i.mculib_uart_print_string)
-    i.mculib_user_load                       0x000080c4   Section        0  mculib_user_setting.o(i.mculib_user_load)
-    i.mculib_user_save                       0x0000818c   Section        0  mculib_user_setting.o(i.mculib_user_save)
-    i.ms933x_init                            0x000081b4   Section        0  main.o(i.ms933x_init)
-    i.ms933x_interrupt_service               0x00008254   Section        0  main.o(i.ms933x_interrupt_service)
-    i.ms933x_media_service                   0x0000827c   Section        0  main.o(i.ms933x_media_service)
-    i.ms9601_Media_Service                   0x000082c0   Section        0  hdmi.o(i.ms9601_Media_Service)
-    i.ms9601_init                            0x000082e8   Section        0  hdmi.o(i.ms9601_init)
-    i.muclib_gpio_init                       0x00008374   Section        0  mculib_gpio.o(i.muclib_gpio_init)
-    i.printf_input_audio_config              0x000083e0   Section        0  main.o(i.printf_input_audio_config)
-    i.printf_input_av_config                 0x000084a4   Section        0  main.o(i.printf_input_av_config)
-    i.printf_input_timing                    0x00008510   Section        0  main.o(i.printf_input_timing)
-    i.printf_input_vendor_specific_config    0x00008704   Section        0  main.o(i.printf_input_vendor_specific_config)
-    i.printf_input_video_config              0x00008794   Section        0  main.o(i.printf_input_video_config)
-    i.sys_abs                                0x000088bc   Section        0  hdmi.o(i.sys_abs)
-    i.sys_audio_i2s_mclk_pad_ctrl_service    0x000088cc   Section        0  main.o(i.sys_audio_i2s_mclk_pad_ctrl_service)
-    i.sys_config_output                      0x00008928   Section        0  main.o(i.sys_config_output)
-    i.sys_default_hdmi_audio_config          0x0000897c   Section        0  main.o(i.sys_default_hdmi_audio_config)
-    i.sys_default_hdmi_vendor_specific_config 0x00008998   Section        0  main.o(i.sys_default_hdmi_vendor_specific_config)
-    i.sys_default_hdmi_video_config          0x000089ac   Section        0  main.o(i.sys_default_hdmi_video_config)
-    i.sys_edid_convert                       0x000089cc   Section        0  main.o(i.sys_edid_convert)
-    i.sys_error_service                      0x00008d58   Section        0  main.o(i.sys_error_service)
-    i.sys_error_service_enable               0x00008ed8   Section        0  main.o(i.sys_error_service_enable)
-    i.sys_hdmi_av_config                     0x00008f14   Section        0  main.o(i.sys_hdmi_av_config)
-    i.sys_hdmi_gcp_packet_avmute_service     0x00008ff0   Section        0  main.o(i.sys_hdmi_gcp_packet_avmute_service)
-    i.sys_hdmi_rx_audio_config               0x0000902c   Section        0  main.o(i.sys_hdmi_rx_audio_config)
-    i.sys_hdmi_rx_audio_service              0x000090d0   Section        0  main.o(i.sys_hdmi_rx_audio_service)
-    i.sys_hdmi_rx_hdcp_service               0x00009140   Section        0  main.o(i.sys_hdmi_rx_hdcp_service)
-    i.sys_hdmi_rx_packet_service             0x000091d8   Section        0  main.o(i.sys_hdmi_rx_packet_service)
-    i.sys_hdmi_rx_pll_service                0x00009280   Section        0  main.o(i.sys_hdmi_rx_pll_service)
-    i.sys_hdmi_rx_tmds_overload_service      0x00009370   Section        0  main.o(i.sys_hdmi_rx_tmds_overload_service)
-    i.sys_hdmi_rx_video_fifo_reset           0x00009372   Section        0  main.o(i.sys_hdmi_rx_video_fifo_reset)
-    i.sys_hdmi_tx_hdcp_service               0x00009388   Section        0  main.o(i.sys_hdmi_tx_hdcp_service)
-    i.sys_hotplug_init                       0x00009414   Section        0  main.o(i.sys_hotplug_init)
-    i.sys_hotplug_service                    0x0000948c   Section        0  main.o(i.sys_hotplug_service)
-    i.sys_led_init                           0x0000950c   Section        0  main.o(i.sys_led_init)
-    i.sys_led_process                        0x00009538   Section        0  main.o(i.sys_led_process)
-    i.sys_mdt_service                        0x000095d4   Section        0  main.o(i.sys_mdt_service)
-    i.sys_ms933x_chip_valid_check            0x0000974c   Section        0  main.o(i.sys_ms933x_chip_valid_check)
-    i.sys_shutdown_output                    0x000097a8   Section        0  main.o(i.sys_shutdown_output)
-    i.system_init                            0x000097d8   Section        0  main.o(i.system_init)
-    .constdata                               0x00009814   Section      256  hw32l003_hal_uart.o(.constdata)
-    ParityTable256                           0x00009814   Data         256  hw32l003_hal_uart.o(.constdata)
-    .constdata                               0x00009914   Section      844  main.o(.constdata)
-    u8_sys_edid_default_buf                  0x00009914   Data         256  main.o(.constdata)
-    u8_rx_ksv_buf                            0x00009a14   Data           5  main.o(.constdata)
-    u8_rx_ksv_clr_buf                        0x00009a19   Data           5  main.o(.constdata)
-    u8_rx_key_buf                            0x00009a1e   Data         280  main.o(.constdata)
-    u8_tx_ksv_buf                            0x00009b36   Data           5  main.o(.constdata)
-    u8_tx_key_buf                            0x00009b3b   Data         280  main.o(.constdata)
-    .constdata                               0x00009c60   Section       38  hdmi.o(.constdata)
-    .constdata                               0x00009c86   Section        8  ms933x_drv_hdmi_tx.o(.constdata)
-    HDCP_AN_DATA                             0x00009c86   Data           8  ms933x_drv_hdmi_tx.o(.constdata)
-    .constdata                               0x00009c90   Section      150  ms933x_drv_hdmi_rx.o(.constdata)
-    ptEqGainVal                              0x00009c90   Data         112  ms933x_drv_hdmi_rx.o(.constdata)
->>>>>>> remotes/origin/master
+    i.main                                   0x0000762c   Section        0  main.o(i.main)
+    i.mculib_Led_toggle                      0x00007700   Section        0  mculib_peripheral.o(i.mculib_Led_toggle)
+    i.mculib_chip_read_interrupt_pin         0x00007710   Section        0  mculib_peripheral.o(i.mculib_chip_read_interrupt_pin)
+    i.mculib_chip_reset                      0x00007748   Section        0  mculib_peripheral.o(i.mculib_chip_reset)
+    i.mculib_clock_init                      0x00007788   Section        0  mculib_gpio.o(i.mculib_clock_init)
+    i.mculib_delay_ms                        0x000078c8   Section        0  mculib_timer.o(i.mculib_delay_ms)
+    i.mculib_delay_us                        0x000078f0   Section        0  mculib_timer.o(i.mculib_delay_us)
+    i.mculib_hdmi_rx_led_control             0x00007922   Section        0  mculib_peripheral.o(i.mculib_hdmi_rx_led_control)
+    i.mculib_hdmi_tx_led_control             0x00007924   Section        0  mculib_peripheral.o(i.mculib_hdmi_tx_led_control)
+    i.mculib_i2c_burstread_16bidx8bval       0x00007942   Section        0  mculib_i2c.o(i.mculib_i2c_burstread_16bidx8bval)
+    i.mculib_i2c_burstread_8bidx8bval        0x000079b4   Section        0  mculib_i2c.o(i.mculib_i2c_burstread_8bidx8bval)
+    i.mculib_i2c_burstread_8bidx8bval_ext    0x00007a18   Section        0  mculib_i2c.o(i.mculib_i2c_burstread_8bidx8bval_ext)
+    i.mculib_i2c_burstwrite_16bidx8bval      0x00007a74   Section        0  mculib_i2c.o(i.mculib_i2c_burstwrite_16bidx8bval)
+    i.mculib_i2c_init                        0x00007ad8   Section        0  mculib_i2c.o(i.mculib_i2c_init)
+    i.mculib_i2c_read_16bidx8bval            0x00007b04   Section        0  mculib_i2c.o(i.mculib_i2c_read_16bidx8bval)
+    i.mculib_i2c_read_8bidx8bval             0x00007b5a   Section        0  mculib_i2c.o(i.mculib_i2c_read_8bidx8bval)
+    i.mculib_i2c_set_speed                   0x00007ba4   Section        0  mculib_i2c.o(i.mculib_i2c_set_speed)
+    i.mculib_i2c_write_16bidx8bval           0x00007be0   Section        0  mculib_i2c.o(i.mculib_i2c_write_16bidx8bval)
+    i.mculib_i2c_write_8bidx8bval            0x00007c2a   Section        0  mculib_i2c.o(i.mculib_i2c_write_8bidx8bval)
+    i.mculib_i2c_write_blank                 0x00007c68   Section        0  mculib_i2c.o(i.mculib_i2c_write_blank)
+    i.mculib_iap_erase                       0x00007c94   Section        0  mculib_iap.o(i.mculib_iap_erase)
+    i.mculib_iap_read_byte                   0x00007cc0   Section        0  mculib_iap.o(i.mculib_iap_read_byte)
+    i.mculib_iap_write                       0x00007cc6   Section        0  mculib_iap.o(i.mculib_iap_write)
+    i.mculib_iap_write_byte                  0x00007ce4   Section        0  mculib_iap.o(i.mculib_iap_write_byte)
+    i.mculib_key_detect                      0x00007cf8   Section        0  mculib_key.o(i.mculib_key_detect)
+    i.mculib_key_init                        0x00007de4   Section        0  mculib_key.o(i.mculib_key_init)
+    i.mculib_led_init                        0x00007e0c   Section        0  mculib_peripheral.o(i.mculib_led_init)
+    i.mculib_timer_config_ms                 0x00007e40   Section        0  mculib_timer.o(i.mculib_timer_config_ms)
+    i.mculib_uart_init                       0x00007edc   Section        0  mculib_uart.o(i.mculib_uart_init)
+    i.mculib_uart_log                        0x00007fac   Section        0  mculib_uart.o(i.mculib_uart_log)
+    i.mculib_uart_log1                       0x00007fc4   Section        0  mculib_uart.o(i.mculib_uart_log1)
+    i.mculib_uart_log2                       0x00007fec   Section        0  mculib_uart.o(i.mculib_uart_log2)
+    i.mculib_uart_print_char                 0x0000800c   Section        0  mculib_uart.o(i.mculib_uart_print_char)
+    i.mculib_uart_print_dec                  0x00008038   Section        0  mculib_uart.o(i.mculib_uart_print_dec)
+    i.mculib_uart_print_hex                  0x00008096   Section        0  mculib_uart.o(i.mculib_uart_print_hex)
+    i.mculib_uart_print_string               0x000080c4   Section        0  mculib_uart.o(i.mculib_uart_print_string)
+    i.mculib_user_load                       0x000080dc   Section        0  mculib_user_setting.o(i.mculib_user_load)
+    i.mculib_user_save                       0x000081a4   Section        0  mculib_user_setting.o(i.mculib_user_save)
+    i.ms933x_init                            0x000081cc   Section        0  main.o(i.ms933x_init)
+    i.ms933x_interrupt_service               0x0000826c   Section        0  main.o(i.ms933x_interrupt_service)
+    i.ms933x_media_service                   0x00008294   Section        0  main.o(i.ms933x_media_service)
+    i.ms9601_Media_Service                   0x000082d8   Section        0  hdmi.o(i.ms9601_Media_Service)
+    i.ms9601_init                            0x00008300   Section        0  hdmi.o(i.ms9601_init)
+    i.muclib_gpio_init                       0x0000838c   Section        0  mculib_gpio.o(i.muclib_gpio_init)
+    i.printf_input_audio_config              0x000083f8   Section        0  main.o(i.printf_input_audio_config)
+    i.printf_input_av_config                 0x000084bc   Section        0  main.o(i.printf_input_av_config)
+    i.printf_input_timing                    0x00008528   Section        0  main.o(i.printf_input_timing)
+    i.printf_input_vendor_specific_config    0x0000871c   Section        0  main.o(i.printf_input_vendor_specific_config)
+    i.printf_input_video_config              0x000087ac   Section        0  main.o(i.printf_input_video_config)
+    i.sys_abs                                0x000088d4   Section        0  hdmi.o(i.sys_abs)
+    i.sys_audio_i2s_mclk_pad_ctrl_service    0x000088e4   Section        0  main.o(i.sys_audio_i2s_mclk_pad_ctrl_service)
+    i.sys_config_output                      0x00008940   Section        0  main.o(i.sys_config_output)
+    i.sys_default_hdmi_audio_config          0x00008994   Section        0  main.o(i.sys_default_hdmi_audio_config)
+    i.sys_default_hdmi_vendor_specific_config 0x000089b0   Section        0  main.o(i.sys_default_hdmi_vendor_specific_config)
+    i.sys_default_hdmi_video_config          0x000089c4   Section        0  main.o(i.sys_default_hdmi_video_config)
+    i.sys_edid_convert                       0x000089e4   Section        0  main.o(i.sys_edid_convert)
+    i.sys_error_service                      0x00008d70   Section        0  main.o(i.sys_error_service)
+    i.sys_error_service_enable               0x00008ef0   Section        0  main.o(i.sys_error_service_enable)
+    i.sys_hdmi_av_config                     0x00008f2c   Section        0  main.o(i.sys_hdmi_av_config)
+    i.sys_hdmi_gcp_packet_avmute_service     0x00009008   Section        0  main.o(i.sys_hdmi_gcp_packet_avmute_service)
+    i.sys_hdmi_rx_audio_config               0x00009044   Section        0  main.o(i.sys_hdmi_rx_audio_config)
+    i.sys_hdmi_rx_audio_service              0x000090e8   Section        0  main.o(i.sys_hdmi_rx_audio_service)
+    i.sys_hdmi_rx_hdcp_service               0x00009158   Section        0  main.o(i.sys_hdmi_rx_hdcp_service)
+    i.sys_hdmi_rx_packet_service             0x000091f0   Section        0  main.o(i.sys_hdmi_rx_packet_service)
+    i.sys_hdmi_rx_pll_service                0x00009298   Section        0  main.o(i.sys_hdmi_rx_pll_service)
+    i.sys_hdmi_rx_tmds_overload_service      0x00009388   Section        0  main.o(i.sys_hdmi_rx_tmds_overload_service)
+    i.sys_hdmi_rx_video_fifo_reset           0x0000938a   Section        0  main.o(i.sys_hdmi_rx_video_fifo_reset)
+    i.sys_hdmi_tx_hdcp_service               0x000093a0   Section        0  main.o(i.sys_hdmi_tx_hdcp_service)
+    i.sys_hotplug_init                       0x0000942c   Section        0  main.o(i.sys_hotplug_init)
+    i.sys_hotplug_service                    0x000094a4   Section        0  main.o(i.sys_hotplug_service)
+    i.sys_led_init                           0x00009524   Section        0  main.o(i.sys_led_init)
+    i.sys_led_process                        0x00009550   Section        0  main.o(i.sys_led_process)
+    i.sys_mdt_service                        0x000095ec   Section        0  main.o(i.sys_mdt_service)
+    i.sys_ms933x_chip_valid_check            0x00009764   Section        0  main.o(i.sys_ms933x_chip_valid_check)
+    i.sys_shutdown_output                    0x000097c0   Section        0  main.o(i.sys_shutdown_output)
+    i.system_init                            0x000097f0   Section        0  main.o(i.system_init)
+    .constdata                               0x0000982c   Section      256  hw32l003_hal_uart.o(.constdata)
+    ParityTable256                           0x0000982c   Data         256  hw32l003_hal_uart.o(.constdata)
+    .constdata                               0x0000992c   Section      844  main.o(.constdata)
+    u8_sys_edid_default_buf                  0x0000992c   Data         256  main.o(.constdata)
+    u8_rx_ksv_buf                            0x00009a2c   Data           5  main.o(.constdata)
+    u8_rx_ksv_clr_buf                        0x00009a31   Data           5  main.o(.constdata)
+    u8_rx_key_buf                            0x00009a36   Data         280  main.o(.constdata)
+    u8_tx_ksv_buf                            0x00009b4e   Data           5  main.o(.constdata)
+    u8_tx_key_buf                            0x00009b53   Data         280  main.o(.constdata)
+    .constdata                               0x00009c78   Section       38  hdmi.o(.constdata)
+    .constdata                               0x00009c9e   Section        8  ms933x_drv_hdmi_tx.o(.constdata)
+    HDCP_AN_DATA                             0x00009c9e   Data           8  ms933x_drv_hdmi_tx.o(.constdata)
+    .constdata                               0x00009ca8   Section      150  ms933x_drv_hdmi_rx.o(.constdata)
+    ptEqGainVal                              0x00009ca8   Data         112  ms933x_drv_hdmi_rx.o(.constdata)
     .data                                    0x20000000   Section        4  system_hw32l003.o(.data)
     .data                                    0x20000004   Section        9  hw32l003_hal.o(.data)
     .data                                    0x20000010   Section       15  mculib_uart.o(.data)
@@ -1916,179 +1817,91 @@ Image Symbol Table
     hdmi_pow_logic                           0x0000733d   Thumb Code   218  hdmi.o(i.hdmi_pow_logic)
     i2c_read_8bidx8bval                      0x00007431   Thumb Code    74  mculib_i2c.o(i.i2c_read_8bidx8bval)
     i2c_write_8bidx8bval                     0x0000747b   Thumb Code    62  mculib_i2c.o(i.i2c_write_8bidx8bval)
-<<<<<<< HEAD
-    key_service                              0x000074b9   Thumb Code   110  main.o(i.key_service)
-    main                                     0x00007559   Thumb Code   176  main.o(i.main)
-    mculib_Led_toggle                        0x0000762d   Thumb Code    12  mculib_peripheral.o(i.mculib_Led_toggle)
-    mculib_chip_read_interrupt_pin           0x0000763d   Thumb Code    52  mculib_peripheral.o(i.mculib_chip_read_interrupt_pin)
-    mculib_chip_reset                        0x00007675   Thumb Code    60  mculib_peripheral.o(i.mculib_chip_reset)
-    mculib_clock_init                        0x000076b5   Thumb Code   304  mculib_gpio.o(i.mculib_clock_init)
-    mculib_delay_ms                          0x000077f5   Thumb Code    40  mculib_timer.o(i.mculib_delay_ms)
-    mculib_delay_us                          0x0000781d   Thumb Code    50  mculib_timer.o(i.mculib_delay_us)
-    mculib_hdmi_rx_led_control               0x0000784f   Thumb Code     2  mculib_peripheral.o(i.mculib_hdmi_rx_led_control)
-    mculib_hdmi_tx_led_control               0x00007851   Thumb Code    30  mculib_peripheral.o(i.mculib_hdmi_tx_led_control)
-    mculib_i2c_burstread_16bidx8bval         0x0000786f   Thumb Code   114  mculib_i2c.o(i.mculib_i2c_burstread_16bidx8bval)
-    mculib_i2c_burstread_8bidx8bval          0x000078e1   Thumb Code   100  mculib_i2c.o(i.mculib_i2c_burstread_8bidx8bval)
-    mculib_i2c_burstread_8bidx8bval_ext      0x00007945   Thumb Code    92  mculib_i2c.o(i.mculib_i2c_burstread_8bidx8bval_ext)
-    mculib_i2c_burstwrite_16bidx8bval        0x000079a1   Thumb Code   100  mculib_i2c.o(i.mculib_i2c_burstwrite_16bidx8bval)
-    mculib_i2c_init                          0x00007a05   Thumb Code    38  mculib_i2c.o(i.mculib_i2c_init)
-    mculib_i2c_read_16bidx8bval              0x00007a31   Thumb Code    86  mculib_i2c.o(i.mculib_i2c_read_16bidx8bval)
-    mculib_i2c_read_8bidx8bval               0x00007a87   Thumb Code    74  mculib_i2c.o(i.mculib_i2c_read_8bidx8bval)
-    mculib_i2c_set_speed                     0x00007ad1   Thumb Code    54  mculib_i2c.o(i.mculib_i2c_set_speed)
-    mculib_i2c_write_16bidx8bval             0x00007b0d   Thumb Code    74  mculib_i2c.o(i.mculib_i2c_write_16bidx8bval)
-    mculib_i2c_write_8bidx8bval              0x00007b57   Thumb Code    62  mculib_i2c.o(i.mculib_i2c_write_8bidx8bval)
-    mculib_i2c_write_blank                   0x00007b95   Thumb Code    44  mculib_i2c.o(i.mculib_i2c_write_blank)
-    mculib_iap_erase                         0x00007bc1   Thumb Code    36  mculib_iap.o(i.mculib_iap_erase)
-    mculib_iap_read_byte                     0x00007bed   Thumb Code     6  mculib_iap.o(i.mculib_iap_read_byte)
-    mculib_iap_write                         0x00007bf3   Thumb Code    30  mculib_iap.o(i.mculib_iap_write)
-    mculib_iap_write_byte                    0x00007c11   Thumb Code    20  mculib_iap.o(i.mculib_iap_write_byte)
-    mculib_key_detect                        0x00007c25   Thumb Code   216  mculib_key.o(i.mculib_key_detect)
-    mculib_key_init                          0x00007d11   Thumb Code    36  mculib_key.o(i.mculib_key_init)
-    mculib_led_init                          0x00007d39   Thumb Code    46  mculib_peripheral.o(i.mculib_led_init)
-    mculib_timer_config_ms                   0x00007d6d   Thumb Code   140  mculib_timer.o(i.mculib_timer_config_ms)
-    mculib_uart_init                         0x00007e09   Thumb Code   182  mculib_uart.o(i.mculib_uart_init)
-    mculib_uart_log                          0x00007ed9   Thumb Code    18  mculib_uart.o(i.mculib_uart_log)
-    mculib_uart_log1                         0x00007ef1   Thumb Code    32  mculib_uart.o(i.mculib_uart_log1)
-    mculib_uart_log2                         0x00007f19   Thumb Code    26  mculib_uart.o(i.mculib_uart_log2)
-    mculib_uart_print_char                   0x00007f39   Thumb Code    34  mculib_uart.o(i.mculib_uart_print_char)
-    mculib_uart_print_dec                    0x00007f65   Thumb Code    94  mculib_uart.o(i.mculib_uart_print_dec)
-    mculib_uart_print_hex                    0x00007fc3   Thumb Code    46  mculib_uart.o(i.mculib_uart_print_hex)
-    mculib_uart_print_string                 0x00007ff1   Thumb Code    22  mculib_uart.o(i.mculib_uart_print_string)
-    mculib_user_load                         0x00008009   Thumb Code   108  mculib_user_setting.o(i.mculib_user_load)
-    mculib_user_save                         0x000080d1   Thumb Code    34  mculib_user_setting.o(i.mculib_user_save)
-    ms933x_init                              0x000080f9   Thumb Code    88  main.o(i.ms933x_init)
-    ms933x_interrupt_service                 0x00008199   Thumb Code    38  main.o(i.ms933x_interrupt_service)
-    ms933x_media_service                     0x000081c1   Thumb Code    60  main.o(i.ms933x_media_service)
-    ms9601_Media_Service                     0x00008205   Thumb Code    36  hdmi.o(i.ms9601_Media_Service)
-    ms9601_init                              0x0000822d   Thumb Code    60  hdmi.o(i.ms9601_init)
-    muclib_gpio_init                         0x000082b9   Thumb Code    86  mculib_gpio.o(i.muclib_gpio_init)
-    printf_input_audio_config                0x00008325   Thumb Code    66  main.o(i.printf_input_audio_config)
-    printf_input_av_config                   0x000083e9   Thumb Code    70  main.o(i.printf_input_av_config)
-    printf_input_timing                      0x00008455   Thumb Code   212  main.o(i.printf_input_timing)
-    printf_input_vendor_specific_config      0x00008649   Thumb Code    64  main.o(i.printf_input_vendor_specific_config)
-    printf_input_video_config                0x000086d9   Thumb Code    96  main.o(i.printf_input_video_config)
-    sys_abs                                  0x00008801   Thumb Code    14  hdmi.o(i.sys_abs)
-    sys_audio_i2s_mclk_pad_ctrl_service      0x00008811   Thumb Code    68  main.o(i.sys_audio_i2s_mclk_pad_ctrl_service)
-    sys_config_output                        0x0000886d   Thumb Code    78  main.o(i.sys_config_output)
-    sys_default_hdmi_audio_config            0x000088c1   Thumb Code    24  main.o(i.sys_default_hdmi_audio_config)
-    sys_default_hdmi_vendor_specific_config  0x000088dd   Thumb Code    16  main.o(i.sys_default_hdmi_vendor_specific_config)
-    sys_default_hdmi_video_config            0x000088f1   Thumb Code    28  main.o(i.sys_default_hdmi_video_config)
-    sys_edid_convert                         0x00008911   Thumb Code   898  main.o(i.sys_edid_convert)
-    sys_error_service                        0x00008c9d   Thumb Code   266  main.o(i.sys_error_service)
-    sys_error_service_enable                 0x00008e1d   Thumb Code    40  main.o(i.sys_error_service_enable)
-    sys_hdmi_av_config                       0x00008e59   Thumb Code   190  main.o(i.sys_hdmi_av_config)
-    sys_hdmi_gcp_packet_avmute_service       0x00008f35   Thumb Code    44  main.o(i.sys_hdmi_gcp_packet_avmute_service)
-    sys_hdmi_rx_audio_config                 0x00008f71   Thumb Code   110  main.o(i.sys_hdmi_rx_audio_config)
-    sys_hdmi_rx_audio_service                0x00009015   Thumb Code    92  main.o(i.sys_hdmi_rx_audio_service)
-    sys_hdmi_rx_hdcp_service                 0x00009085   Thumb Code   102  main.o(i.sys_hdmi_rx_hdcp_service)
-    sys_hdmi_rx_packet_service               0x0000911d   Thumb Code   132  main.o(i.sys_hdmi_rx_packet_service)
-    sys_hdmi_rx_pll_service                  0x000091c5   Thumb Code   210  main.o(i.sys_hdmi_rx_pll_service)
-    sys_hdmi_rx_tmds_overload_service        0x000092b5   Thumb Code     2  main.o(i.sys_hdmi_rx_tmds_overload_service)
-    sys_hdmi_rx_video_fifo_reset             0x000092b7   Thumb Code    22  main.o(i.sys_hdmi_rx_video_fifo_reset)
-    sys_hdmi_tx_hdcp_service                 0x000092cd   Thumb Code   114  main.o(i.sys_hdmi_tx_hdcp_service)
-    sys_hotplug_init                         0x00009359   Thumb Code    60  main.o(i.sys_hotplug_init)
-    sys_hotplug_service                      0x000093d1   Thumb Code    92  main.o(i.sys_hotplug_service)
-    sys_led_init                             0x00009451   Thumb Code    44  main.o(i.sys_led_init)
-    sys_led_process                          0x0000947d   Thumb Code   146  main.o(i.sys_led_process)
-    sys_mdt_service                          0x00009519   Thumb Code   300  main.o(i.sys_mdt_service)
-    sys_ms933x_chip_valid_check              0x00009691   Thumb Code    60  main.o(i.sys_ms933x_chip_valid_check)
-    sys_shutdown_output                      0x000096ed   Thumb Code    42  main.o(i.sys_shutdown_output)
-    system_init                              0x0000971d   Thumb Code    46  main.o(i.system_init)
-    EQ_Address                               0x00009ba4   Data          10  hdmi.o(.constdata)
-    PARA_3_EQ_1080                           0x00009bae   Data          10  hdmi.o(.constdata)
-    PARA_3_EQ_4K                             0x00009bb8   Data          10  hdmi.o(.constdata)
-    hot_code                                 0x00009bc2   Data           5  hdmi.o(.constdata)
-    PARA_3_SEL                               0x00009bc7   Data           3  hdmi.o(.constdata)
-    ptOffsetVal                              0x00009c44   Data          30  ms933x_drv_hdmi_rx.o(.constdata)
-    Region$$Table$$Base                      0x00009c6c   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00009c8c   Number         0  anon$$obj.o(Region$$Table)
-=======
-    key_service                              0x000074b9   Thumb Code   252  main.o(i.key_service)
-    main                                     0x00007615   Thumb Code   176  main.o(i.main)
-    mculib_Led_toggle                        0x000076e9   Thumb Code    12  mculib_peripheral.o(i.mculib_Led_toggle)
-    mculib_chip_read_interrupt_pin           0x000076f9   Thumb Code    52  mculib_peripheral.o(i.mculib_chip_read_interrupt_pin)
-    mculib_chip_reset                        0x00007731   Thumb Code    60  mculib_peripheral.o(i.mculib_chip_reset)
-    mculib_clock_init                        0x00007771   Thumb Code   304  mculib_gpio.o(i.mculib_clock_init)
-    mculib_delay_ms                          0x000078b1   Thumb Code    40  mculib_timer.o(i.mculib_delay_ms)
-    mculib_delay_us                          0x000078d9   Thumb Code    50  mculib_timer.o(i.mculib_delay_us)
-    mculib_hdmi_rx_led_control               0x0000790b   Thumb Code     2  mculib_peripheral.o(i.mculib_hdmi_rx_led_control)
-    mculib_hdmi_tx_led_control               0x0000790d   Thumb Code    30  mculib_peripheral.o(i.mculib_hdmi_tx_led_control)
-    mculib_i2c_burstread_16bidx8bval         0x0000792b   Thumb Code   114  mculib_i2c.o(i.mculib_i2c_burstread_16bidx8bval)
-    mculib_i2c_burstread_8bidx8bval          0x0000799d   Thumb Code   100  mculib_i2c.o(i.mculib_i2c_burstread_8bidx8bval)
-    mculib_i2c_burstread_8bidx8bval_ext      0x00007a01   Thumb Code    92  mculib_i2c.o(i.mculib_i2c_burstread_8bidx8bval_ext)
-    mculib_i2c_burstwrite_16bidx8bval        0x00007a5d   Thumb Code   100  mculib_i2c.o(i.mculib_i2c_burstwrite_16bidx8bval)
-    mculib_i2c_init                          0x00007ac1   Thumb Code    38  mculib_i2c.o(i.mculib_i2c_init)
-    mculib_i2c_read_16bidx8bval              0x00007aed   Thumb Code    86  mculib_i2c.o(i.mculib_i2c_read_16bidx8bval)
-    mculib_i2c_read_8bidx8bval               0x00007b43   Thumb Code    74  mculib_i2c.o(i.mculib_i2c_read_8bidx8bval)
-    mculib_i2c_set_speed                     0x00007b8d   Thumb Code    54  mculib_i2c.o(i.mculib_i2c_set_speed)
-    mculib_i2c_write_16bidx8bval             0x00007bc9   Thumb Code    74  mculib_i2c.o(i.mculib_i2c_write_16bidx8bval)
-    mculib_i2c_write_8bidx8bval              0x00007c13   Thumb Code    62  mculib_i2c.o(i.mculib_i2c_write_8bidx8bval)
-    mculib_i2c_write_blank                   0x00007c51   Thumb Code    44  mculib_i2c.o(i.mculib_i2c_write_blank)
-    mculib_iap_erase                         0x00007c7d   Thumb Code    36  mculib_iap.o(i.mculib_iap_erase)
-    mculib_iap_read_byte                     0x00007ca9   Thumb Code     6  mculib_iap.o(i.mculib_iap_read_byte)
-    mculib_iap_write                         0x00007caf   Thumb Code    30  mculib_iap.o(i.mculib_iap_write)
-    mculib_iap_write_byte                    0x00007ccd   Thumb Code    20  mculib_iap.o(i.mculib_iap_write_byte)
-    mculib_key_detect                        0x00007ce1   Thumb Code   216  mculib_key.o(i.mculib_key_detect)
-    mculib_key_init                          0x00007dcd   Thumb Code    36  mculib_key.o(i.mculib_key_init)
-    mculib_led_init                          0x00007df5   Thumb Code    46  mculib_peripheral.o(i.mculib_led_init)
-    mculib_timer_config_ms                   0x00007e29   Thumb Code   140  mculib_timer.o(i.mculib_timer_config_ms)
-    mculib_uart_init                         0x00007ec5   Thumb Code   182  mculib_uart.o(i.mculib_uart_init)
-    mculib_uart_log                          0x00007f95   Thumb Code    18  mculib_uart.o(i.mculib_uart_log)
-    mculib_uart_log1                         0x00007fad   Thumb Code    32  mculib_uart.o(i.mculib_uart_log1)
-    mculib_uart_log2                         0x00007fd5   Thumb Code    26  mculib_uart.o(i.mculib_uart_log2)
-    mculib_uart_print_char                   0x00007ff5   Thumb Code    34  mculib_uart.o(i.mculib_uart_print_char)
-    mculib_uart_print_dec                    0x00008021   Thumb Code    94  mculib_uart.o(i.mculib_uart_print_dec)
-    mculib_uart_print_hex                    0x0000807f   Thumb Code    46  mculib_uart.o(i.mculib_uart_print_hex)
-    mculib_uart_print_string                 0x000080ad   Thumb Code    22  mculib_uart.o(i.mculib_uart_print_string)
-    mculib_user_load                         0x000080c5   Thumb Code   108  mculib_user_setting.o(i.mculib_user_load)
-    mculib_user_save                         0x0000818d   Thumb Code    34  mculib_user_setting.o(i.mculib_user_save)
-    ms933x_init                              0x000081b5   Thumb Code    88  main.o(i.ms933x_init)
-    ms933x_interrupt_service                 0x00008255   Thumb Code    38  main.o(i.ms933x_interrupt_service)
-    ms933x_media_service                     0x0000827d   Thumb Code    60  main.o(i.ms933x_media_service)
-    ms9601_Media_Service                     0x000082c1   Thumb Code    36  hdmi.o(i.ms9601_Media_Service)
-    ms9601_init                              0x000082e9   Thumb Code    60  hdmi.o(i.ms9601_init)
-    muclib_gpio_init                         0x00008375   Thumb Code    86  mculib_gpio.o(i.muclib_gpio_init)
-    printf_input_audio_config                0x000083e1   Thumb Code    66  main.o(i.printf_input_audio_config)
-    printf_input_av_config                   0x000084a5   Thumb Code    70  main.o(i.printf_input_av_config)
-    printf_input_timing                      0x00008511   Thumb Code   212  main.o(i.printf_input_timing)
-    printf_input_vendor_specific_config      0x00008705   Thumb Code    64  main.o(i.printf_input_vendor_specific_config)
-    printf_input_video_config                0x00008795   Thumb Code    96  main.o(i.printf_input_video_config)
-    sys_abs                                  0x000088bd   Thumb Code    14  hdmi.o(i.sys_abs)
-    sys_audio_i2s_mclk_pad_ctrl_service      0x000088cd   Thumb Code    68  main.o(i.sys_audio_i2s_mclk_pad_ctrl_service)
-    sys_config_output                        0x00008929   Thumb Code    78  main.o(i.sys_config_output)
-    sys_default_hdmi_audio_config            0x0000897d   Thumb Code    24  main.o(i.sys_default_hdmi_audio_config)
-    sys_default_hdmi_vendor_specific_config  0x00008999   Thumb Code    16  main.o(i.sys_default_hdmi_vendor_specific_config)
-    sys_default_hdmi_video_config            0x000089ad   Thumb Code    28  main.o(i.sys_default_hdmi_video_config)
-    sys_edid_convert                         0x000089cd   Thumb Code   898  main.o(i.sys_edid_convert)
-    sys_error_service                        0x00008d59   Thumb Code   266  main.o(i.sys_error_service)
-    sys_error_service_enable                 0x00008ed9   Thumb Code    40  main.o(i.sys_error_service_enable)
-    sys_hdmi_av_config                       0x00008f15   Thumb Code   190  main.o(i.sys_hdmi_av_config)
-    sys_hdmi_gcp_packet_avmute_service       0x00008ff1   Thumb Code    44  main.o(i.sys_hdmi_gcp_packet_avmute_service)
-    sys_hdmi_rx_audio_config                 0x0000902d   Thumb Code   110  main.o(i.sys_hdmi_rx_audio_config)
-    sys_hdmi_rx_audio_service                0x000090d1   Thumb Code    92  main.o(i.sys_hdmi_rx_audio_service)
-    sys_hdmi_rx_hdcp_service                 0x00009141   Thumb Code   102  main.o(i.sys_hdmi_rx_hdcp_service)
-    sys_hdmi_rx_packet_service               0x000091d9   Thumb Code   132  main.o(i.sys_hdmi_rx_packet_service)
-    sys_hdmi_rx_pll_service                  0x00009281   Thumb Code   210  main.o(i.sys_hdmi_rx_pll_service)
-    sys_hdmi_rx_tmds_overload_service        0x00009371   Thumb Code     2  main.o(i.sys_hdmi_rx_tmds_overload_service)
-    sys_hdmi_rx_video_fifo_reset             0x00009373   Thumb Code    22  main.o(i.sys_hdmi_rx_video_fifo_reset)
-    sys_hdmi_tx_hdcp_service                 0x00009389   Thumb Code   114  main.o(i.sys_hdmi_tx_hdcp_service)
-    sys_hotplug_init                         0x00009415   Thumb Code    60  main.o(i.sys_hotplug_init)
-    sys_hotplug_service                      0x0000948d   Thumb Code    92  main.o(i.sys_hotplug_service)
-    sys_led_init                             0x0000950d   Thumb Code    44  main.o(i.sys_led_init)
-    sys_led_process                          0x00009539   Thumb Code   146  main.o(i.sys_led_process)
-    sys_mdt_service                          0x000095d5   Thumb Code   300  main.o(i.sys_mdt_service)
-    sys_ms933x_chip_valid_check              0x0000974d   Thumb Code    60  main.o(i.sys_ms933x_chip_valid_check)
-    sys_shutdown_output                      0x000097a9   Thumb Code    42  main.o(i.sys_shutdown_output)
-    system_init                              0x000097d9   Thumb Code    46  main.o(i.system_init)
-    EQ_Address                               0x00009c60   Data          10  hdmi.o(.constdata)
-    PARA_3_EQ_1080                           0x00009c6a   Data          10  hdmi.o(.constdata)
-    PARA_3_EQ_4K                             0x00009c74   Data          10  hdmi.o(.constdata)
-    hot_code                                 0x00009c7e   Data           5  hdmi.o(.constdata)
-    PARA_3_SEL                               0x00009c83   Data           3  hdmi.o(.constdata)
-    ptOffsetVal                              0x00009d00   Data          30  ms933x_drv_hdmi_rx.o(.constdata)
-    Region$$Table$$Base                      0x00009d28   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00009d48   Number         0  anon$$obj.o(Region$$Table)
->>>>>>> remotes/origin/master
+    key_service                              0x000074b9   Thumb Code   258  main.o(i.key_service)
+    main                                     0x0000762d   Thumb Code   176  main.o(i.main)
+    mculib_Led_toggle                        0x00007701   Thumb Code    12  mculib_peripheral.o(i.mculib_Led_toggle)
+    mculib_chip_read_interrupt_pin           0x00007711   Thumb Code    52  mculib_peripheral.o(i.mculib_chip_read_interrupt_pin)
+    mculib_chip_reset                        0x00007749   Thumb Code    60  mculib_peripheral.o(i.mculib_chip_reset)
+    mculib_clock_init                        0x00007789   Thumb Code   304  mculib_gpio.o(i.mculib_clock_init)
+    mculib_delay_ms                          0x000078c9   Thumb Code    40  mculib_timer.o(i.mculib_delay_ms)
+    mculib_delay_us                          0x000078f1   Thumb Code    50  mculib_timer.o(i.mculib_delay_us)
+    mculib_hdmi_rx_led_control               0x00007923   Thumb Code     2  mculib_peripheral.o(i.mculib_hdmi_rx_led_control)
+    mculib_hdmi_tx_led_control               0x00007925   Thumb Code    30  mculib_peripheral.o(i.mculib_hdmi_tx_led_control)
+    mculib_i2c_burstread_16bidx8bval         0x00007943   Thumb Code   114  mculib_i2c.o(i.mculib_i2c_burstread_16bidx8bval)
+    mculib_i2c_burstread_8bidx8bval          0x000079b5   Thumb Code   100  mculib_i2c.o(i.mculib_i2c_burstread_8bidx8bval)
+    mculib_i2c_burstread_8bidx8bval_ext      0x00007a19   Thumb Code    92  mculib_i2c.o(i.mculib_i2c_burstread_8bidx8bval_ext)
+    mculib_i2c_burstwrite_16bidx8bval        0x00007a75   Thumb Code   100  mculib_i2c.o(i.mculib_i2c_burstwrite_16bidx8bval)
+    mculib_i2c_init                          0x00007ad9   Thumb Code    38  mculib_i2c.o(i.mculib_i2c_init)
+    mculib_i2c_read_16bidx8bval              0x00007b05   Thumb Code    86  mculib_i2c.o(i.mculib_i2c_read_16bidx8bval)
+    mculib_i2c_read_8bidx8bval               0x00007b5b   Thumb Code    74  mculib_i2c.o(i.mculib_i2c_read_8bidx8bval)
+    mculib_i2c_set_speed                     0x00007ba5   Thumb Code    54  mculib_i2c.o(i.mculib_i2c_set_speed)
+    mculib_i2c_write_16bidx8bval             0x00007be1   Thumb Code    74  mculib_i2c.o(i.mculib_i2c_write_16bidx8bval)
+    mculib_i2c_write_8bidx8bval              0x00007c2b   Thumb Code    62  mculib_i2c.o(i.mculib_i2c_write_8bidx8bval)
+    mculib_i2c_write_blank                   0x00007c69   Thumb Code    44  mculib_i2c.o(i.mculib_i2c_write_blank)
+    mculib_iap_erase                         0x00007c95   Thumb Code    36  mculib_iap.o(i.mculib_iap_erase)
+    mculib_iap_read_byte                     0x00007cc1   Thumb Code     6  mculib_iap.o(i.mculib_iap_read_byte)
+    mculib_iap_write                         0x00007cc7   Thumb Code    30  mculib_iap.o(i.mculib_iap_write)
+    mculib_iap_write_byte                    0x00007ce5   Thumb Code    20  mculib_iap.o(i.mculib_iap_write_byte)
+    mculib_key_detect                        0x00007cf9   Thumb Code   216  mculib_key.o(i.mculib_key_detect)
+    mculib_key_init                          0x00007de5   Thumb Code    36  mculib_key.o(i.mculib_key_init)
+    mculib_led_init                          0x00007e0d   Thumb Code    46  mculib_peripheral.o(i.mculib_led_init)
+    mculib_timer_config_ms                   0x00007e41   Thumb Code   140  mculib_timer.o(i.mculib_timer_config_ms)
+    mculib_uart_init                         0x00007edd   Thumb Code   182  mculib_uart.o(i.mculib_uart_init)
+    mculib_uart_log                          0x00007fad   Thumb Code    18  mculib_uart.o(i.mculib_uart_log)
+    mculib_uart_log1                         0x00007fc5   Thumb Code    32  mculib_uart.o(i.mculib_uart_log1)
+    mculib_uart_log2                         0x00007fed   Thumb Code    26  mculib_uart.o(i.mculib_uart_log2)
+    mculib_uart_print_char                   0x0000800d   Thumb Code    34  mculib_uart.o(i.mculib_uart_print_char)
+    mculib_uart_print_dec                    0x00008039   Thumb Code    94  mculib_uart.o(i.mculib_uart_print_dec)
+    mculib_uart_print_hex                    0x00008097   Thumb Code    46  mculib_uart.o(i.mculib_uart_print_hex)
+    mculib_uart_print_string                 0x000080c5   Thumb Code    22  mculib_uart.o(i.mculib_uart_print_string)
+    mculib_user_load                         0x000080dd   Thumb Code   108  mculib_user_setting.o(i.mculib_user_load)
+    mculib_user_save                         0x000081a5   Thumb Code    34  mculib_user_setting.o(i.mculib_user_save)
+    ms933x_init                              0x000081cd   Thumb Code    88  main.o(i.ms933x_init)
+    ms933x_interrupt_service                 0x0000826d   Thumb Code    38  main.o(i.ms933x_interrupt_service)
+    ms933x_media_service                     0x00008295   Thumb Code    60  main.o(i.ms933x_media_service)
+    ms9601_Media_Service                     0x000082d9   Thumb Code    36  hdmi.o(i.ms9601_Media_Service)
+    ms9601_init                              0x00008301   Thumb Code    60  hdmi.o(i.ms9601_init)
+    muclib_gpio_init                         0x0000838d   Thumb Code    86  mculib_gpio.o(i.muclib_gpio_init)
+    printf_input_audio_config                0x000083f9   Thumb Code    66  main.o(i.printf_input_audio_config)
+    printf_input_av_config                   0x000084bd   Thumb Code    70  main.o(i.printf_input_av_config)
+    printf_input_timing                      0x00008529   Thumb Code   212  main.o(i.printf_input_timing)
+    printf_input_vendor_specific_config      0x0000871d   Thumb Code    64  main.o(i.printf_input_vendor_specific_config)
+    printf_input_video_config                0x000087ad   Thumb Code    96  main.o(i.printf_input_video_config)
+    sys_abs                                  0x000088d5   Thumb Code    14  hdmi.o(i.sys_abs)
+    sys_audio_i2s_mclk_pad_ctrl_service      0x000088e5   Thumb Code    68  main.o(i.sys_audio_i2s_mclk_pad_ctrl_service)
+    sys_config_output                        0x00008941   Thumb Code    78  main.o(i.sys_config_output)
+    sys_default_hdmi_audio_config            0x00008995   Thumb Code    24  main.o(i.sys_default_hdmi_audio_config)
+    sys_default_hdmi_vendor_specific_config  0x000089b1   Thumb Code    16  main.o(i.sys_default_hdmi_vendor_specific_config)
+    sys_default_hdmi_video_config            0x000089c5   Thumb Code    28  main.o(i.sys_default_hdmi_video_config)
+    sys_edid_convert                         0x000089e5   Thumb Code   898  main.o(i.sys_edid_convert)
+    sys_error_service                        0x00008d71   Thumb Code   266  main.o(i.sys_error_service)
+    sys_error_service_enable                 0x00008ef1   Thumb Code    40  main.o(i.sys_error_service_enable)
+    sys_hdmi_av_config                       0x00008f2d   Thumb Code   190  main.o(i.sys_hdmi_av_config)
+    sys_hdmi_gcp_packet_avmute_service       0x00009009   Thumb Code    44  main.o(i.sys_hdmi_gcp_packet_avmute_service)
+    sys_hdmi_rx_audio_config                 0x00009045   Thumb Code   110  main.o(i.sys_hdmi_rx_audio_config)
+    sys_hdmi_rx_audio_service                0x000090e9   Thumb Code    92  main.o(i.sys_hdmi_rx_audio_service)
+    sys_hdmi_rx_hdcp_service                 0x00009159   Thumb Code   102  main.o(i.sys_hdmi_rx_hdcp_service)
+    sys_hdmi_rx_packet_service               0x000091f1   Thumb Code   132  main.o(i.sys_hdmi_rx_packet_service)
+    sys_hdmi_rx_pll_service                  0x00009299   Thumb Code   210  main.o(i.sys_hdmi_rx_pll_service)
+    sys_hdmi_rx_tmds_overload_service        0x00009389   Thumb Code     2  main.o(i.sys_hdmi_rx_tmds_overload_service)
+    sys_hdmi_rx_video_fifo_reset             0x0000938b   Thumb Code    22  main.o(i.sys_hdmi_rx_video_fifo_reset)
+    sys_hdmi_tx_hdcp_service                 0x000093a1   Thumb Code   114  main.o(i.sys_hdmi_tx_hdcp_service)
+    sys_hotplug_init                         0x0000942d   Thumb Code    60  main.o(i.sys_hotplug_init)
+    sys_hotplug_service                      0x000094a5   Thumb Code    92  main.o(i.sys_hotplug_service)
+    sys_led_init                             0x00009525   Thumb Code    44  main.o(i.sys_led_init)
+    sys_led_process                          0x00009551   Thumb Code   146  main.o(i.sys_led_process)
+    sys_mdt_service                          0x000095ed   Thumb Code   300  main.o(i.sys_mdt_service)
+    sys_ms933x_chip_valid_check              0x00009765   Thumb Code    60  main.o(i.sys_ms933x_chip_valid_check)
+    sys_shutdown_output                      0x000097c1   Thumb Code    42  main.o(i.sys_shutdown_output)
+    system_init                              0x000097f1   Thumb Code    46  main.o(i.system_init)
+    EQ_Address                               0x00009c78   Data          10  hdmi.o(.constdata)
+    PARA_3_EQ_1080                           0x00009c82   Data          10  hdmi.o(.constdata)
+    PARA_3_EQ_4K                             0x00009c8c   Data          10  hdmi.o(.constdata)
+    hot_code                                 0x00009c96   Data           5  hdmi.o(.constdata)
+    PARA_3_SEL                               0x00009c9b   Data           3  hdmi.o(.constdata)
+    ptOffsetVal                              0x00009d18   Data          30  ms933x_drv_hdmi_rx.o(.constdata)
+    Region$$Table$$Base                      0x00009d40   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00009d60   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_hw32l003.o(.data)
     uwTick                                   0x20000004   Data           4  hw32l003_hal.o(.data)
     uwTickPrio                               0x20000008   Data           4  hw32l003_hal.o(.data)
@@ -2122,15 +1935,9 @@ Memory Map of the image
 
   Image Entry point : 0x000000c1
 
-<<<<<<< HEAD
-  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00009d58, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00009e2c, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00009c8c, Max: 0x00010000, ABSOLUTE)
-=======
-  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00009e14, Max: 0x00010000, ABSOLUTE)
-
-    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00009d48, Max: 0x00010000, ABSOLUTE)
->>>>>>> remotes/origin/master
+    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00009d60, Max: 0x00010000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2257,249 +2064,127 @@ Memory Map of the image
     0x0000733c   0x0000733c   0x000000f4   Code   RO         1464    i.hdmi_pow_logic    hdmi.o
     0x00007430   0x00007430   0x0000004a   Code   RO          801    i.i2c_read_8bidx8bval  mculib_i2c.o
     0x0000747a   0x0000747a   0x0000003e   Code   RO          802    i.i2c_write_8bidx8bval  mculib_i2c.o
-<<<<<<< HEAD
-    0x000074b8   0x000074b8   0x000000a0   Code   RO         1032    i.key_service       main.o
-    0x00007558   0x00007558   0x000000d4   Code   RO         1033    i.main              main.o
-    0x0000762c   0x0000762c   0x00000010   Code   RO          726    i.mculib_Led_toggle  mculib_peripheral.o
-    0x0000763c   0x0000763c   0x00000038   Code   RO          728    i.mculib_chip_read_interrupt_pin  mculib_peripheral.o
-    0x00007674   0x00007674   0x00000040   Code   RO          729    i.mculib_chip_reset  mculib_peripheral.o
-    0x000076b4   0x000076b4   0x00000140   Code   RO          449    i.mculib_clock_init  mculib_gpio.o
-    0x000077f4   0x000077f4   0x00000028   Code   RO          649    i.mculib_delay_ms   mculib_timer.o
-    0x0000781c   0x0000781c   0x00000032   Code   RO          650    i.mculib_delay_us   mculib_timer.o
-    0x0000784e   0x0000784e   0x00000002   Code   RO          731    i.mculib_hdmi_rx_led_control  mculib_peripheral.o
-    0x00007850   0x00007850   0x0000001e   Code   RO          732    i.mculib_hdmi_tx_led_control  mculib_peripheral.o
-    0x0000786e   0x0000786e   0x00000072   Code   RO          803    i.mculib_i2c_burstread_16bidx8bval  mculib_i2c.o
-    0x000078e0   0x000078e0   0x00000064   Code   RO          804    i.mculib_i2c_burstread_8bidx8bval  mculib_i2c.o
-    0x00007944   0x00007944   0x0000005c   Code   RO          805    i.mculib_i2c_burstread_8bidx8bval_ext  mculib_i2c.o
-    0x000079a0   0x000079a0   0x00000064   Code   RO          806    i.mculib_i2c_burstwrite_16bidx8bval  mculib_i2c.o
-    0x00007a04   0x00007a04   0x0000002c   Code   RO          808    i.mculib_i2c_init   mculib_i2c.o
-    0x00007a30   0x00007a30   0x00000056   Code   RO          809    i.mculib_i2c_read_16bidx8bval  mculib_i2c.o
-    0x00007a86   0x00007a86   0x0000004a   Code   RO          810    i.mculib_i2c_read_8bidx8bval  mculib_i2c.o
-    0x00007ad0   0x00007ad0   0x0000003c   Code   RO          811    i.mculib_i2c_set_speed  mculib_i2c.o
-    0x00007b0c   0x00007b0c   0x0000004a   Code   RO          812    i.mculib_i2c_write_16bidx8bval  mculib_i2c.o
-    0x00007b56   0x00007b56   0x0000003e   Code   RO          813    i.mculib_i2c_write_8bidx8bval  mculib_i2c.o
-    0x00007b94   0x00007b94   0x0000002c   Code   RO          814    i.mculib_i2c_write_blank  mculib_i2c.o
-    0x00007bc0   0x00007bc0   0x0000002c   Code   RO          923    i.mculib_iap_erase  mculib_iap.o
-    0x00007bec   0x00007bec   0x00000006   Code   RO          925    i.mculib_iap_read_byte  mculib_iap.o
-    0x00007bf2   0x00007bf2   0x0000001e   Code   RO          926    i.mculib_iap_write  mculib_iap.o
-    0x00007c10   0x00007c10   0x00000014   Code   RO          927    i.mculib_iap_write_byte  mculib_iap.o
-    0x00007c24   0x00007c24   0x000000ec   Code   RO          697    i.mculib_key_detect  mculib_key.o
-    0x00007d10   0x00007d10   0x00000028   Code   RO          698    i.mculib_key_init   mculib_key.o
-    0x00007d38   0x00007d38   0x00000034   Code   RO          734    i.mculib_led_init   mculib_peripheral.o
-    0x00007d6c   0x00007d6c   0x0000009c   Code   RO          651    i.mculib_timer_config_ms  mculib_timer.o
-    0x00007e08   0x00007e08   0x000000d0   Code   RO          532    i.mculib_uart_init  mculib_uart.o
-    0x00007ed8   0x00007ed8   0x00000018   Code   RO          533    i.mculib_uart_log   mculib_uart.o
-    0x00007ef0   0x00007ef0   0x00000028   Code   RO          534    i.mculib_uart_log1  mculib_uart.o
-    0x00007f18   0x00007f18   0x00000020   Code   RO          535    i.mculib_uart_log2  mculib_uart.o
-    0x00007f38   0x00007f38   0x0000002c   Code   RO          536    i.mculib_uart_print_char  mculib_uart.o
-    0x00007f64   0x00007f64   0x0000005e   Code   RO          537    i.mculib_uart_print_dec  mculib_uart.o
-    0x00007fc2   0x00007fc2   0x0000002e   Code   RO          538    i.mculib_uart_print_hex  mculib_uart.o
-    0x00007ff0   0x00007ff0   0x00000016   Code   RO          539    i.mculib_uart_print_string  mculib_uart.o
-    0x00008006   0x00008006   0x00000002   PAD
-    0x00008008   0x00008008   0x000000c8   Code   RO          975    i.mculib_user_load  mculib_user_setting.o
-    0x000080d0   0x000080d0   0x00000028   Code   RO          976    i.mculib_user_save  mculib_user_setting.o
-    0x000080f8   0x000080f8   0x000000a0   Code   RO         1034    i.ms933x_init       main.o
-    0x00008198   0x00008198   0x00000026   Code   RO         1035    i.ms933x_interrupt_service  main.o
-    0x000081be   0x000081be   0x00000002   PAD
-    0x000081c0   0x000081c0   0x00000044   Code   RO         1036    i.ms933x_media_service  main.o
-    0x00008204   0x00008204   0x00000028   Code   RO         1465    i.ms9601_Media_Service  hdmi.o
-    0x0000822c   0x0000822c   0x0000008c   Code   RO         1466    i.ms9601_init       hdmi.o
-    0x000082b8   0x000082b8   0x0000006c   Code   RO          450    i.muclib_gpio_init  mculib_gpio.o
-    0x00008324   0x00008324   0x000000c4   Code   RO         1038    i.printf_input_audio_config  main.o
-    0x000083e8   0x000083e8   0x0000006c   Code   RO         1039    i.printf_input_av_config  main.o
-    0x00008454   0x00008454   0x000001f4   Code   RO         1040    i.printf_input_timing  main.o
-    0x00008648   0x00008648   0x00000090   Code   RO         1041    i.printf_input_vendor_specific_config  main.o
-    0x000086d8   0x000086d8   0x00000128   Code   RO         1042    i.printf_input_video_config  main.o
-    0x00008800   0x00008800   0x0000000e   Code   RO         1467    i.sys_abs           hdmi.o
-    0x0000880e   0x0000880e   0x00000002   PAD
-    0x00008810   0x00008810   0x0000005c   Code   RO         1043    i.sys_audio_i2s_mclk_pad_ctrl_service  main.o
-    0x0000886c   0x0000886c   0x00000054   Code   RO         1044    i.sys_config_output  main.o
-    0x000088c0   0x000088c0   0x0000001c   Code   RO         1045    i.sys_default_hdmi_audio_config  main.o
-    0x000088dc   0x000088dc   0x00000014   Code   RO         1046    i.sys_default_hdmi_vendor_specific_config  main.o
-    0x000088f0   0x000088f0   0x00000020   Code   RO         1047    i.sys_default_hdmi_video_config  main.o
-    0x00008910   0x00008910   0x0000038c   Code   RO         1048    i.sys_edid_convert  main.o
-    0x00008c9c   0x00008c9c   0x00000180   Code   RO         1049    i.sys_error_service  main.o
-    0x00008e1c   0x00008e1c   0x0000003c   Code   RO         1050    i.sys_error_service_enable  main.o
-    0x00008e58   0x00008e58   0x000000dc   Code   RO         1051    i.sys_hdmi_av_config  main.o
-    0x00008f34   0x00008f34   0x0000003c   Code   RO         1052    i.sys_hdmi_gcp_packet_avmute_service  main.o
-    0x00008f70   0x00008f70   0x000000a4   Code   RO         1053    i.sys_hdmi_rx_audio_config  main.o
-    0x00009014   0x00009014   0x00000070   Code   RO         1054    i.sys_hdmi_rx_audio_service  main.o
-    0x00009084   0x00009084   0x00000098   Code   RO         1055    i.sys_hdmi_rx_hdcp_service  main.o
-    0x0000911c   0x0000911c   0x000000a8   Code   RO         1056    i.sys_hdmi_rx_packet_service  main.o
-    0x000091c4   0x000091c4   0x000000f0   Code   RO         1057    i.sys_hdmi_rx_pll_service  main.o
-    0x000092b4   0x000092b4   0x00000002   Code   RO         1058    i.sys_hdmi_rx_tmds_overload_service  main.o
-    0x000092b6   0x000092b6   0x00000016   Code   RO         1059    i.sys_hdmi_rx_video_fifo_reset  main.o
-    0x000092cc   0x000092cc   0x0000008c   Code   RO         1060    i.sys_hdmi_tx_hdcp_service  main.o
-    0x00009358   0x00009358   0x00000078   Code   RO         1061    i.sys_hotplug_init  main.o
-    0x000093d0   0x000093d0   0x00000080   Code   RO         1062    i.sys_hotplug_service  main.o
-    0x00009450   0x00009450   0x0000002c   Code   RO         1063    i.sys_led_init      main.o
-    0x0000947c   0x0000947c   0x0000009c   Code   RO         1064    i.sys_led_process   main.o
-    0x00009518   0x00009518   0x00000178   Code   RO         1065    i.sys_mdt_service   main.o
-    0x00009690   0x00009690   0x0000005c   Code   RO         1066    i.sys_ms933x_chip_valid_check  main.o
-    0x000096ec   0x000096ec   0x00000030   Code   RO         1067    i.sys_shutdown_output  main.o
-    0x0000971c   0x0000971c   0x0000003c   Code   RO         1068    i.system_init       main.o
-    0x00009758   0x00009758   0x00000100   Data   RO          166    .constdata          hw32l003_hal_uart.o
-    0x00009858   0x00009858   0x0000034c   Data   RO         1070    .constdata          main.o
-    0x00009ba4   0x00009ba4   0x00000026   Data   RO         1468    .constdata          hdmi.o
-    0x00009bca   0x00009bca   0x00000008   Data   RO         1616    .constdata          ms933x_sdklib_keil_m0_vxxx_202xxxxx.lib(ms933x_drv_hdmi_tx.o)
-    0x00009bd2   0x00009bd2   0x00000002   PAD
-    0x00009bd4   0x00009bd4   0x00000096   Data   RO         1637    .constdata          ms933x_sdklib_keil_m0_vxxx_202xxxxx.lib(ms933x_drv_hdmi_rx.o)
-    0x00009c6a   0x00009c6a   0x00000002   PAD
-    0x00009c6c   0x00009c6c   0x00000020   Data   RO         2006    Region$$Table       anon$$obj.o
+    0x000074b8   0x000074b8   0x00000174   Code   RO         1032    i.key_service       main.o
+    0x0000762c   0x0000762c   0x000000d4   Code   RO         1033    i.main              main.o
+    0x00007700   0x00007700   0x00000010   Code   RO          726    i.mculib_Led_toggle  mculib_peripheral.o
+    0x00007710   0x00007710   0x00000038   Code   RO          728    i.mculib_chip_read_interrupt_pin  mculib_peripheral.o
+    0x00007748   0x00007748   0x00000040   Code   RO          729    i.mculib_chip_reset  mculib_peripheral.o
+    0x00007788   0x00007788   0x00000140   Code   RO          449    i.mculib_clock_init  mculib_gpio.o
+    0x000078c8   0x000078c8   0x00000028   Code   RO          649    i.mculib_delay_ms   mculib_timer.o
+    0x000078f0   0x000078f0   0x00000032   Code   RO          650    i.mculib_delay_us   mculib_timer.o
+    0x00007922   0x00007922   0x00000002   Code   RO          731    i.mculib_hdmi_rx_led_control  mculib_peripheral.o
+    0x00007924   0x00007924   0x0000001e   Code   RO          732    i.mculib_hdmi_tx_led_control  mculib_peripheral.o
+    0x00007942   0x00007942   0x00000072   Code   RO          803    i.mculib_i2c_burstread_16bidx8bval  mculib_i2c.o
+    0x000079b4   0x000079b4   0x00000064   Code   RO          804    i.mculib_i2c_burstread_8bidx8bval  mculib_i2c.o
+    0x00007a18   0x00007a18   0x0000005c   Code   RO          805    i.mculib_i2c_burstread_8bidx8bval_ext  mculib_i2c.o
+    0x00007a74   0x00007a74   0x00000064   Code   RO          806    i.mculib_i2c_burstwrite_16bidx8bval  mculib_i2c.o
+    0x00007ad8   0x00007ad8   0x0000002c   Code   RO          808    i.mculib_i2c_init   mculib_i2c.o
+    0x00007b04   0x00007b04   0x00000056   Code   RO          809    i.mculib_i2c_read_16bidx8bval  mculib_i2c.o
+    0x00007b5a   0x00007b5a   0x0000004a   Code   RO          810    i.mculib_i2c_read_8bidx8bval  mculib_i2c.o
+    0x00007ba4   0x00007ba4   0x0000003c   Code   RO          811    i.mculib_i2c_set_speed  mculib_i2c.o
+    0x00007be0   0x00007be0   0x0000004a   Code   RO          812    i.mculib_i2c_write_16bidx8bval  mculib_i2c.o
+    0x00007c2a   0x00007c2a   0x0000003e   Code   RO          813    i.mculib_i2c_write_8bidx8bval  mculib_i2c.o
+    0x00007c68   0x00007c68   0x0000002c   Code   RO          814    i.mculib_i2c_write_blank  mculib_i2c.o
+    0x00007c94   0x00007c94   0x0000002c   Code   RO          923    i.mculib_iap_erase  mculib_iap.o
+    0x00007cc0   0x00007cc0   0x00000006   Code   RO          925    i.mculib_iap_read_byte  mculib_iap.o
+    0x00007cc6   0x00007cc6   0x0000001e   Code   RO          926    i.mculib_iap_write  mculib_iap.o
+    0x00007ce4   0x00007ce4   0x00000014   Code   RO          927    i.mculib_iap_write_byte  mculib_iap.o
+    0x00007cf8   0x00007cf8   0x000000ec   Code   RO          697    i.mculib_key_detect  mculib_key.o
+    0x00007de4   0x00007de4   0x00000028   Code   RO          698    i.mculib_key_init   mculib_key.o
+    0x00007e0c   0x00007e0c   0x00000034   Code   RO          734    i.mculib_led_init   mculib_peripheral.o
+    0x00007e40   0x00007e40   0x0000009c   Code   RO          651    i.mculib_timer_config_ms  mculib_timer.o
+    0x00007edc   0x00007edc   0x000000d0   Code   RO          532    i.mculib_uart_init  mculib_uart.o
+    0x00007fac   0x00007fac   0x00000018   Code   RO          533    i.mculib_uart_log   mculib_uart.o
+    0x00007fc4   0x00007fc4   0x00000028   Code   RO          534    i.mculib_uart_log1  mculib_uart.o
+    0x00007fec   0x00007fec   0x00000020   Code   RO          535    i.mculib_uart_log2  mculib_uart.o
+    0x0000800c   0x0000800c   0x0000002c   Code   RO          536    i.mculib_uart_print_char  mculib_uart.o
+    0x00008038   0x00008038   0x0000005e   Code   RO          537    i.mculib_uart_print_dec  mculib_uart.o
+    0x00008096   0x00008096   0x0000002e   Code   RO          538    i.mculib_uart_print_hex  mculib_uart.o
+    0x000080c4   0x000080c4   0x00000016   Code   RO          539    i.mculib_uart_print_string  mculib_uart.o
+    0x000080da   0x000080da   0x00000002   PAD
+    0x000080dc   0x000080dc   0x000000c8   Code   RO          975    i.mculib_user_load  mculib_user_setting.o
+    0x000081a4   0x000081a4   0x00000028   Code   RO          976    i.mculib_user_save  mculib_user_setting.o
+    0x000081cc   0x000081cc   0x000000a0   Code   RO         1034    i.ms933x_init       main.o
+    0x0000826c   0x0000826c   0x00000026   Code   RO         1035    i.ms933x_interrupt_service  main.o
+    0x00008292   0x00008292   0x00000002   PAD
+    0x00008294   0x00008294   0x00000044   Code   RO         1036    i.ms933x_media_service  main.o
+    0x000082d8   0x000082d8   0x00000028   Code   RO         1465    i.ms9601_Media_Service  hdmi.o
+    0x00008300   0x00008300   0x0000008c   Code   RO         1466    i.ms9601_init       hdmi.o
+    0x0000838c   0x0000838c   0x0000006c   Code   RO          450    i.muclib_gpio_init  mculib_gpio.o
+    0x000083f8   0x000083f8   0x000000c4   Code   RO         1038    i.printf_input_audio_config  main.o
+    0x000084bc   0x000084bc   0x0000006c   Code   RO         1039    i.printf_input_av_config  main.o
+    0x00008528   0x00008528   0x000001f4   Code   RO         1040    i.printf_input_timing  main.o
+    0x0000871c   0x0000871c   0x00000090   Code   RO         1041    i.printf_input_vendor_specific_config  main.o
+    0x000087ac   0x000087ac   0x00000128   Code   RO         1042    i.printf_input_video_config  main.o
+    0x000088d4   0x000088d4   0x0000000e   Code   RO         1467    i.sys_abs           hdmi.o
+    0x000088e2   0x000088e2   0x00000002   PAD
+    0x000088e4   0x000088e4   0x0000005c   Code   RO         1043    i.sys_audio_i2s_mclk_pad_ctrl_service  main.o
+    0x00008940   0x00008940   0x00000054   Code   RO         1044    i.sys_config_output  main.o
+    0x00008994   0x00008994   0x0000001c   Code   RO         1045    i.sys_default_hdmi_audio_config  main.o
+    0x000089b0   0x000089b0   0x00000014   Code   RO         1046    i.sys_default_hdmi_vendor_specific_config  main.o
+    0x000089c4   0x000089c4   0x00000020   Code   RO         1047    i.sys_default_hdmi_video_config  main.o
+    0x000089e4   0x000089e4   0x0000038c   Code   RO         1048    i.sys_edid_convert  main.o
+    0x00008d70   0x00008d70   0x00000180   Code   RO         1049    i.sys_error_service  main.o
+    0x00008ef0   0x00008ef0   0x0000003c   Code   RO         1050    i.sys_error_service_enable  main.o
+    0x00008f2c   0x00008f2c   0x000000dc   Code   RO         1051    i.sys_hdmi_av_config  main.o
+    0x00009008   0x00009008   0x0000003c   Code   RO         1052    i.sys_hdmi_gcp_packet_avmute_service  main.o
+    0x00009044   0x00009044   0x000000a4   Code   RO         1053    i.sys_hdmi_rx_audio_config  main.o
+    0x000090e8   0x000090e8   0x00000070   Code   RO         1054    i.sys_hdmi_rx_audio_service  main.o
+    0x00009158   0x00009158   0x00000098   Code   RO         1055    i.sys_hdmi_rx_hdcp_service  main.o
+    0x000091f0   0x000091f0   0x000000a8   Code   RO         1056    i.sys_hdmi_rx_packet_service  main.o
+    0x00009298   0x00009298   0x000000f0   Code   RO         1057    i.sys_hdmi_rx_pll_service  main.o
+    0x00009388   0x00009388   0x00000002   Code   RO         1058    i.sys_hdmi_rx_tmds_overload_service  main.o
+    0x0000938a   0x0000938a   0x00000016   Code   RO         1059    i.sys_hdmi_rx_video_fifo_reset  main.o
+    0x000093a0   0x000093a0   0x0000008c   Code   RO         1060    i.sys_hdmi_tx_hdcp_service  main.o
+    0x0000942c   0x0000942c   0x00000078   Code   RO         1061    i.sys_hotplug_init  main.o
+    0x000094a4   0x000094a4   0x00000080   Code   RO         1062    i.sys_hotplug_service  main.o
+    0x00009524   0x00009524   0x0000002c   Code   RO         1063    i.sys_led_init      main.o
+    0x00009550   0x00009550   0x0000009c   Code   RO         1064    i.sys_led_process   main.o
+    0x000095ec   0x000095ec   0x00000178   Code   RO         1065    i.sys_mdt_service   main.o
+    0x00009764   0x00009764   0x0000005c   Code   RO         1066    i.sys_ms933x_chip_valid_check  main.o
+    0x000097c0   0x000097c0   0x00000030   Code   RO         1067    i.sys_shutdown_output  main.o
+    0x000097f0   0x000097f0   0x0000003c   Code   RO         1068    i.system_init       main.o
+    0x0000982c   0x0000982c   0x00000100   Data   RO          166    .constdata          hw32l003_hal_uart.o
+    0x0000992c   0x0000992c   0x0000034c   Data   RO         1070    .constdata          main.o
+    0x00009c78   0x00009c78   0x00000026   Data   RO         1468    .constdata          hdmi.o
+    0x00009c9e   0x00009c9e   0x00000008   Data   RO         1616    .constdata          ms933x_sdklib_keil_m0_vxxx_202xxxxx.lib(ms933x_drv_hdmi_tx.o)
+    0x00009ca6   0x00009ca6   0x00000002   PAD
+    0x00009ca8   0x00009ca8   0x00000096   Data   RO         1637    .constdata          ms933x_sdklib_keil_m0_vxxx_202xxxxx.lib(ms933x_drv_hdmi_rx.o)
+    0x00009d3e   0x00009d3e   0x00000002   PAD
+    0x00009d40   0x00009d40   0x00000020   Data   RO         2006    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x00009c8c, Size: 0x00000648, Max: 0x00001000, ABSOLUTE)
-
-    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
-
-    0x20000000   0x00009c8c   0x00000004   Data   RW           14    .data               system_hw32l003.o
-    0x20000004   0x00009c90   0x00000009   Data   RW          336    .data               hw32l003_hal.o
-    0x2000000d   0x00009c99   0x00000003   PAD
-    0x20000010   0x00009c9c   0x0000000f   Data   RW          542    .data               mculib_uart.o
-    0x2000001f   0x00009cab   0x00000001   PAD
-    0x20000020   0x00009cac   0x00000010   Data   RW          653    .data               mculib_timer.o
-    0x20000030   0x00009cbc   0x0000000d   Data   RW          700    .data               mculib_key.o
-    0x2000003d   0x00009cc9   0x00000003   PAD
-    0x20000040   0x00009ccc   0x00000009   Data   RW          816    .data               mculib_i2c.o
-    0x20000049   0x00009cd5   0x00000003   PAD
-    0x2000004c   0x00009cd8   0x00000008   Data   RW          929    .data               mculib_iap.o
-    0x20000054   0x00009ce0   0x00000009   Data   RW          978    .data               mculib_user_setting.o
-    0x2000005d   0x00009ce9   0x00000003   PAD
-    0x20000060   0x00009cec   0x0000005d   Data   RW         1071    .data               main.o
-    0x200000bd   0x00009d49   0x00000007   Data   RW         1469    .data               hdmi.o
-    0x200000c4   0x00009d50   0x00000001   Data   RW         1617    .data               ms933x_sdklib_keil_m0_vxxx_202xxxxx.lib(ms933x_drv_hdmi_tx.o)
-    0x200000c5   0x00009d51   0x00000001   Data   RW         1638    .data               ms933x_sdklib_keil_m0_vxxx_202xxxxx.lib(ms933x_drv_hdmi_rx.o)
-    0x200000c6   0x00009d52   0x00000001   Data   RW         1659    .data               ms933x_sdklib_keil_m0_vxxx_202xxxxx.lib(ms933x_mpi.o)
-    0x200000c7   0x00009d53   0x00000001   PAD
-    0x200000c8   0x00009d54   0x00000004   Data   RW         1978    .data               mc_p.l(stdout.o)
-    0x200000cc   0x00009d58   0x00000004   PAD
-=======
-    0x000074b8   0x000074b8   0x0000015c   Code   RO         1032    i.key_service       main.o
-    0x00007614   0x00007614   0x000000d4   Code   RO         1033    i.main              main.o
-    0x000076e8   0x000076e8   0x00000010   Code   RO          726    i.mculib_Led_toggle  mculib_peripheral.o
-    0x000076f8   0x000076f8   0x00000038   Code   RO          728    i.mculib_chip_read_interrupt_pin  mculib_peripheral.o
-    0x00007730   0x00007730   0x00000040   Code   RO          729    i.mculib_chip_reset  mculib_peripheral.o
-    0x00007770   0x00007770   0x00000140   Code   RO          449    i.mculib_clock_init  mculib_gpio.o
-    0x000078b0   0x000078b0   0x00000028   Code   RO          649    i.mculib_delay_ms   mculib_timer.o
-    0x000078d8   0x000078d8   0x00000032   Code   RO          650    i.mculib_delay_us   mculib_timer.o
-    0x0000790a   0x0000790a   0x00000002   Code   RO          731    i.mculib_hdmi_rx_led_control  mculib_peripheral.o
-    0x0000790c   0x0000790c   0x0000001e   Code   RO          732    i.mculib_hdmi_tx_led_control  mculib_peripheral.o
-    0x0000792a   0x0000792a   0x00000072   Code   RO          803    i.mculib_i2c_burstread_16bidx8bval  mculib_i2c.o
-    0x0000799c   0x0000799c   0x00000064   Code   RO          804    i.mculib_i2c_burstread_8bidx8bval  mculib_i2c.o
-    0x00007a00   0x00007a00   0x0000005c   Code   RO          805    i.mculib_i2c_burstread_8bidx8bval_ext  mculib_i2c.o
-    0x00007a5c   0x00007a5c   0x00000064   Code   RO          806    i.mculib_i2c_burstwrite_16bidx8bval  mculib_i2c.o
-    0x00007ac0   0x00007ac0   0x0000002c   Code   RO          808    i.mculib_i2c_init   mculib_i2c.o
-    0x00007aec   0x00007aec   0x00000056   Code   RO          809    i.mculib_i2c_read_16bidx8bval  mculib_i2c.o
-    0x00007b42   0x00007b42   0x0000004a   Code   RO          810    i.mculib_i2c_read_8bidx8bval  mculib_i2c.o
-    0x00007b8c   0x00007b8c   0x0000003c   Code   RO          811    i.mculib_i2c_set_speed  mculib_i2c.o
-    0x00007bc8   0x00007bc8   0x0000004a   Code   RO          812    i.mculib_i2c_write_16bidx8bval  mculib_i2c.o
-    0x00007c12   0x00007c12   0x0000003e   Code   RO          813    i.mculib_i2c_write_8bidx8bval  mculib_i2c.o
-    0x00007c50   0x00007c50   0x0000002c   Code   RO          814    i.mculib_i2c_write_blank  mculib_i2c.o
-    0x00007c7c   0x00007c7c   0x0000002c   Code   RO          923    i.mculib_iap_erase  mculib_iap.o
-    0x00007ca8   0x00007ca8   0x00000006   Code   RO          925    i.mculib_iap_read_byte  mculib_iap.o
-    0x00007cae   0x00007cae   0x0000001e   Code   RO          926    i.mculib_iap_write  mculib_iap.o
-    0x00007ccc   0x00007ccc   0x00000014   Code   RO          927    i.mculib_iap_write_byte  mculib_iap.o
-    0x00007ce0   0x00007ce0   0x000000ec   Code   RO          697    i.mculib_key_detect  mculib_key.o
-    0x00007dcc   0x00007dcc   0x00000028   Code   RO          698    i.mculib_key_init   mculib_key.o
-    0x00007df4   0x00007df4   0x00000034   Code   RO          734    i.mculib_led_init   mculib_peripheral.o
-    0x00007e28   0x00007e28   0x0000009c   Code   RO          651    i.mculib_timer_config_ms  mculib_timer.o
-    0x00007ec4   0x00007ec4   0x000000d0   Code   RO          532    i.mculib_uart_init  mculib_uart.o
-    0x00007f94   0x00007f94   0x00000018   Code   RO          533    i.mculib_uart_log   mculib_uart.o
-    0x00007fac   0x00007fac   0x00000028   Code   RO          534    i.mculib_uart_log1  mculib_uart.o
-    0x00007fd4   0x00007fd4   0x00000020   Code   RO          535    i.mculib_uart_log2  mculib_uart.o
-    0x00007ff4   0x00007ff4   0x0000002c   Code   RO          536    i.mculib_uart_print_char  mculib_uart.o
-    0x00008020   0x00008020   0x0000005e   Code   RO          537    i.mculib_uart_print_dec  mculib_uart.o
-    0x0000807e   0x0000807e   0x0000002e   Code   RO          538    i.mculib_uart_print_hex  mculib_uart.o
-    0x000080ac   0x000080ac   0x00000016   Code   RO          539    i.mculib_uart_print_string  mculib_uart.o
-    0x000080c2   0x000080c2   0x00000002   PAD
-    0x000080c4   0x000080c4   0x000000c8   Code   RO          975    i.mculib_user_load  mculib_user_setting.o
-    0x0000818c   0x0000818c   0x00000028   Code   RO          976    i.mculib_user_save  mculib_user_setting.o
-    0x000081b4   0x000081b4   0x000000a0   Code   RO         1034    i.ms933x_init       main.o
-    0x00008254   0x00008254   0x00000026   Code   RO         1035    i.ms933x_interrupt_service  main.o
-    0x0000827a   0x0000827a   0x00000002   PAD
-    0x0000827c   0x0000827c   0x00000044   Code   RO         1036    i.ms933x_media_service  main.o
-    0x000082c0   0x000082c0   0x00000028   Code   RO         1465    i.ms9601_Media_Service  hdmi.o
-    0x000082e8   0x000082e8   0x0000008c   Code   RO         1466    i.ms9601_init       hdmi.o
-    0x00008374   0x00008374   0x0000006c   Code   RO          450    i.muclib_gpio_init  mculib_gpio.o
-    0x000083e0   0x000083e0   0x000000c4   Code   RO         1038    i.printf_input_audio_config  main.o
-    0x000084a4   0x000084a4   0x0000006c   Code   RO         1039    i.printf_input_av_config  main.o
-    0x00008510   0x00008510   0x000001f4   Code   RO         1040    i.printf_input_timing  main.o
-    0x00008704   0x00008704   0x00000090   Code   RO         1041    i.printf_input_vendor_specific_config  main.o
-    0x00008794   0x00008794   0x00000128   Code   RO         1042    i.printf_input_video_config  main.o
-    0x000088bc   0x000088bc   0x0000000e   Code   RO         1467    i.sys_abs           hdmi.o
-    0x000088ca   0x000088ca   0x00000002   PAD
-    0x000088cc   0x000088cc   0x0000005c   Code   RO         1043    i.sys_audio_i2s_mclk_pad_ctrl_service  main.o
-    0x00008928   0x00008928   0x00000054   Code   RO         1044    i.sys_config_output  main.o
-    0x0000897c   0x0000897c   0x0000001c   Code   RO         1045    i.sys_default_hdmi_audio_config  main.o
-    0x00008998   0x00008998   0x00000014   Code   RO         1046    i.sys_default_hdmi_vendor_specific_config  main.o
-    0x000089ac   0x000089ac   0x00000020   Code   RO         1047    i.sys_default_hdmi_video_config  main.o
-    0x000089cc   0x000089cc   0x0000038c   Code   RO         1048    i.sys_edid_convert  main.o
-    0x00008d58   0x00008d58   0x00000180   Code   RO         1049    i.sys_error_service  main.o
-    0x00008ed8   0x00008ed8   0x0000003c   Code   RO         1050    i.sys_error_service_enable  main.o
-    0x00008f14   0x00008f14   0x000000dc   Code   RO         1051    i.sys_hdmi_av_config  main.o
-    0x00008ff0   0x00008ff0   0x0000003c   Code   RO         1052    i.sys_hdmi_gcp_packet_avmute_service  main.o
-    0x0000902c   0x0000902c   0x000000a4   Code   RO         1053    i.sys_hdmi_rx_audio_config  main.o
-    0x000090d0   0x000090d0   0x00000070   Code   RO         1054    i.sys_hdmi_rx_audio_service  main.o
-    0x00009140   0x00009140   0x00000098   Code   RO         1055    i.sys_hdmi_rx_hdcp_service  main.o
-    0x000091d8   0x000091d8   0x000000a8   Code   RO         1056    i.sys_hdmi_rx_packet_service  main.o
-    0x00009280   0x00009280   0x000000f0   Code   RO         1057    i.sys_hdmi_rx_pll_service  main.o
-    0x00009370   0x00009370   0x00000002   Code   RO         1058    i.sys_hdmi_rx_tmds_overload_service  main.o
-    0x00009372   0x00009372   0x00000016   Code   RO         1059    i.sys_hdmi_rx_video_fifo_reset  main.o
-    0x00009388   0x00009388   0x0000008c   Code   RO         1060    i.sys_hdmi_tx_hdcp_service  main.o
-    0x00009414   0x00009414   0x00000078   Code   RO         1061    i.sys_hotplug_init  main.o
-    0x0000948c   0x0000948c   0x00000080   Code   RO         1062    i.sys_hotplug_service  main.o
-    0x0000950c   0x0000950c   0x0000002c   Code   RO         1063    i.sys_led_init      main.o
-    0x00009538   0x00009538   0x0000009c   Code   RO         1064    i.sys_led_process   main.o
-    0x000095d4   0x000095d4   0x00000178   Code   RO         1065    i.sys_mdt_service   main.o
-    0x0000974c   0x0000974c   0x0000005c   Code   RO         1066    i.sys_ms933x_chip_valid_check  main.o
-    0x000097a8   0x000097a8   0x00000030   Code   RO         1067    i.sys_shutdown_output  main.o
-    0x000097d8   0x000097d8   0x0000003c   Code   RO         1068    i.system_init       main.o
-    0x00009814   0x00009814   0x00000100   Data   RO          166    .constdata          hw32l003_hal_uart.o
-    0x00009914   0x00009914   0x0000034c   Data   RO         1070    .constdata          main.o
-    0x00009c60   0x00009c60   0x00000026   Data   RO         1468    .constdata          hdmi.o
-    0x00009c86   0x00009c86   0x00000008   Data   RO         1616    .constdata          ms933x_sdklib_keil_m0_vxxx_202xxxxx.lib(ms933x_drv_hdmi_tx.o)
-    0x00009c8e   0x00009c8e   0x00000002   PAD
-    0x00009c90   0x00009c90   0x00000096   Data   RO         1637    .constdata          ms933x_sdklib_keil_m0_vxxx_202xxxxx.lib(ms933x_drv_hdmi_rx.o)
-    0x00009d26   0x00009d26   0x00000002   PAD
-    0x00009d28   0x00009d28   0x00000020   Data   RO         2006    Region$$Table       anon$$obj.o
-
-
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x00009d48, Size: 0x00000648, Max: 0x00001000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x00009d60, Size: 0x00000648, Max: 0x00001000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x00009d48   0x00000004   Data   RW           14    .data               system_hw32l003.o
-    0x20000004   0x00009d4c   0x00000009   Data   RW          336    .data               hw32l003_hal.o
-    0x2000000d   0x00009d55   0x00000003   PAD
-    0x20000010   0x00009d58   0x0000000f   Data   RW          542    .data               mculib_uart.o
-    0x2000001f   0x00009d67   0x00000001   PAD
-    0x20000020   0x00009d68   0x00000010   Data   RW          653    .data               mculib_timer.o
-    0x20000030   0x00009d78   0x0000000d   Data   RW          700    .data               mculib_key.o
-    0x2000003d   0x00009d85   0x00000003   PAD
-    0x20000040   0x00009d88   0x00000009   Data   RW          816    .data               mculib_i2c.o
-    0x20000049   0x00009d91   0x00000003   PAD
-    0x2000004c   0x00009d94   0x00000008   Data   RW          929    .data               mculib_iap.o
-    0x20000054   0x00009d9c   0x00000009   Data   RW          978    .data               mculib_user_setting.o
-    0x2000005d   0x00009da5   0x00000003   PAD
-    0x20000060   0x00009da8   0x0000005d   Data   RW         1071    .data               main.o
-    0x200000bd   0x00009e05   0x00000007   Data   RW         1469    .data               hdmi.o
-    0x200000c4   0x00009e0c   0x00000001   Data   RW         1617    .data               ms933x_sdklib_keil_m0_vxxx_202xxxxx.lib(ms933x_drv_hdmi_tx.o)
-    0x200000c5   0x00009e0d   0x00000001   Data   RW         1638    .data               ms933x_sdklib_keil_m0_vxxx_202xxxxx.lib(ms933x_drv_hdmi_rx.o)
-    0x200000c6   0x00009e0e   0x00000001   Data   RW         1659    .data               ms933x_sdklib_keil_m0_vxxx_202xxxxx.lib(ms933x_mpi.o)
-    0x200000c7   0x00009e0f   0x00000001   PAD
-    0x200000c8   0x00009e10   0x00000004   Data   RW         1978    .data               mc_p.l(stdout.o)
-    0x200000cc   0x00009e14   0x00000004   PAD
->>>>>>> remotes/origin/master
+    0x20000000   0x00009d60   0x00000004   Data   RW           14    .data               system_hw32l003.o
+    0x20000004   0x00009d64   0x00000009   Data   RW          336    .data               hw32l003_hal.o
+    0x2000000d   0x00009d6d   0x00000003   PAD
+    0x20000010   0x00009d70   0x0000000f   Data   RW          542    .data               mculib_uart.o
+    0x2000001f   0x00009d7f   0x00000001   PAD
+    0x20000020   0x00009d80   0x00000010   Data   RW          653    .data               mculib_timer.o
+    0x20000030   0x00009d90   0x0000000d   Data   RW          700    .data               mculib_key.o
+    0x2000003d   0x00009d9d   0x00000003   PAD
+    0x20000040   0x00009da0   0x00000009   Data   RW          816    .data               mculib_i2c.o
+    0x20000049   0x00009da9   0x00000003   PAD
+    0x2000004c   0x00009dac   0x00000008   Data   RW          929    .data               mculib_iap.o
+    0x20000054   0x00009db4   0x00000009   Data   RW          978    .data               mculib_user_setting.o
+    0x2000005d   0x00009dbd   0x00000003   PAD
+    0x20000060   0x00009dc0   0x0000005d   Data   RW         1071    .data               main.o
+    0x200000bd   0x00009e1d   0x00000007   Data   RW         1469    .data               hdmi.o
+    0x200000c4   0x00009e24   0x00000001   Data   RW         1617    .data               ms933x_sdklib_keil_m0_vxxx_202xxxxx.lib(ms933x_drv_hdmi_tx.o)
+    0x200000c5   0x00009e25   0x00000001   Data   RW         1638    .data               ms933x_sdklib_keil_m0_vxxx_202xxxxx.lib(ms933x_drv_hdmi_rx.o)
+    0x200000c6   0x00009e26   0x00000001   Data   RW         1659    .data               ms933x_sdklib_keil_m0_vxxx_202xxxxx.lib(ms933x_mpi.o)
+    0x200000c7   0x00009e27   0x00000001   PAD
+    0x200000c8   0x00009e28   0x00000004   Data   RW         1978    .data               mc_p.l(stdout.o)
+    0x200000cc   0x00009e2c   0x00000004   PAD
     0x200000d0        -       0x00000020   Zero   RW          245    .bss                hw32l003_hal_flash.o
     0x200000f0        -       0x0000007c   Zero   RW          541    .bss                mculib_uart.o
     0x2000016c        -       0x0000000c   Zero   RW          928    .bss                mculib_iap.o
     0x20000178        -       0x000002ac   Zero   RW         1069    .bss                main.o
     0x20000424        -       0x00000020   Zero   RW         1615    .bss                ms933x_sdklib_keil_m0_vxxx_202xxxxx.lib(ms933x_drv_hdmi_tx.o)
-<<<<<<< HEAD
-    0x20000444   0x00009d58   0x00000004   PAD
-=======
-    0x20000444   0x00009e14   0x00000004   PAD
->>>>>>> remotes/origin/master
+    0x20000444   0x00009e2c   0x00000004   PAD
     0x20000448        -       0x00000200   Zero   RW            1    STACK               startup_hw32l003.o
 
 
@@ -2515,11 +2200,7 @@ Image component sizes
       1204        132          0          0         32       6992   hw32l003_hal_flash.o
        576          0          0          0          0       3412   hw32l003_hal_gpio.o
       1192         22        256          0          0       8215   hw32l003_hal_uart.o
-<<<<<<< HEAD
-      8664       2182        844         93        684      51534   main.o
-=======
-      8852       2228        844         93        684      51614   main.o
->>>>>>> remotes/origin/master
+      8876       2246        844         93        684      51618   main.o
        436         38          0          0          0       3341   mculib_gpio.o
       1510         50          0          9          0      13602   mculib_i2c.o
        176         58          0          8         12       3653   mculib_iap.o
@@ -2532,11 +2213,7 @@ Image component sizes
         64         16          0          4          0     140419   system_hw32l003.o
 
     ----------------------------------------------------------------------
-<<<<<<< HEAD
-     17218       3076       1362        196       1364     288776   Object Totals
-=======
-     17406       3122       1362        196       1364     288856   Object Totals
->>>>>>> remotes/origin/master
+     17430       3140       1362        196       1364     288860   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         14          0          0         13          0          0   (incl. Padding)
 
@@ -2602,27 +2279,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-<<<<<<< HEAD
-     38552       3494       1524        204       1404     379459   Grand Totals
-     38552       3494       1524        204       1404     379459   ELF Image Totals
-     38552       3494       1524        204          0          0   ROM Totals
+     38764       3558       1524        204       1404     379543   Grand Totals
+     38764       3558       1524        204       1404     379543   ELF Image Totals
+     38764       3558       1524        204          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                40076 (  39.14kB)
+    Total RO  Size (Code + RO Data)                40288 (  39.34kB)
     Total RW  Size (RW Data + ZI Data)              1608 (   1.57kB)
-    Total ROM Size (Code + RO Data + RW Data)      40280 (  39.34kB)
-=======
-     38740       3540       1524        204       1404     379539   Grand Totals
-     38740       3540       1524        204       1404     379539   ELF Image Totals
-     38740       3540       1524        204          0          0   ROM Totals
-
-==============================================================================
-
-    Total RO  Size (Code + RO Data)                40264 (  39.32kB)
-    Total RW  Size (RW Data + ZI Data)              1608 (   1.57kB)
-    Total ROM Size (Code + RO Data + RW Data)      40468 (  39.52kB)
->>>>>>> remotes/origin/master
+    Total ROM Size (Code + RO Data + RW Data)      40492 (  39.54kB)
 
 ==============================================================================
 
