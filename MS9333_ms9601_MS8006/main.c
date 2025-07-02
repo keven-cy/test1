@@ -2754,7 +2754,7 @@ VOID system_init(VOID)
 VOID key_service(VOID)
 {
     UINT8 u8key = mculib_key_detect();
-
+    LOG("test1.");
     switch ( u8key )
     {
         case KEY_MAP_SHORT0:
